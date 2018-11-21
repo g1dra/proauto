@@ -43,10 +43,8 @@
             </div>
             <div class="social-list" style="text-align: center;">
                 <ul class="social-list__icons">
-                    <li><a target="_blank" href="https://www.facebook.com/Tonytemplates/?ref=hl"><i class="icon-facebook-logo"></i></a></li>
-                    <li><a target="_blank" href="https://twitter.com/tonytemplates/"><i class="icon-twitter-letter-logo"></i></a></li>
-                    <li><a target="_blank" href="https://plus.google.com"><i class="icon-google-plus"></i></a></li>
-                    <li><a target="_blank" href="https://www.linkedin.com/uas/login?"><i class="icon-linkedin-logo"></i></a></li>
+                    <li><a target="_blank" href="https://www.facebook.com/proauto.rentacar.5" title="Facebook"><i class="icon-facebook-logo"></i></a></li>
+                    <li><a target="_blank" href="https://www.instagram.com/pro_auto_rent/?hl=en" title="Instagram"><i class="icon-linkedin-logo"></i></a></li>
                 </ul>
             </div>
         </div>
@@ -73,6 +71,7 @@
                         <div class="textarea-wrapper">
                             <textarea class="textarea-custom input-full" name="Comment" placeholder="Comment"></textarea>
                         </div>
+                        <input type="hidden" id="g-recaptcha-response" name="g-recaptcha-response">
                         <div class="btn-wrapper">
                             <button type="submit" id="submit" class="btn btn-form" >Send message</button>
                         </div>

@@ -35,23 +35,11 @@ Route::get('/home', function () {
 Route::post('/steps','ReservationController@orderForm');
 Route::resource('posts', 'PostController');
 
-
-
-
-
-/*Route::get('/fleet', function () {
-    return view('pages.fleet');
-});*/
-
 Route::get('/about', function () {
     return view('about');
 });
 
-//Route::get('/test', 'CarController@test');
 
-//Route::get('/steps', function () {
-//    return view('pages.steps');
-//});
 
 
 

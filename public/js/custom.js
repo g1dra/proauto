@@ -38,7 +38,7 @@ var globalReservationObject = {};
 /* Initialize All Scripts */
 $document.ready(function () {
 
-/*
+
     if (plugins.steps.length) {
         //$.amaran({content:{'message':'My first example!'}});
         var form = $("#example-advanced-form").show();
@@ -211,11 +211,19 @@ $document.ready(function () {
                     theme:'colorful'
 
                 });
-                return $bookingForm.ajaxSubmit({url: '/reservation', type: 'post', data: merged})
+                // return $bookingForm.ajaxSubmit({url: '/reservation', type: 'post', data: merged})
+
+                grecaptcha.ready(function() {
+                    grecaptcha.execute('6Lc_H3wUAAAAAMhZ20K9fkVsCR2yMp94mZAlS6kQ', {action: 'steps'})
+                        .then(function(token) {
+                            document.getElementById('g-recaptcha-response').value=token;
+                            return $bookingForm.ajaxSubmit({url: '/reservation', type: 'post', data: merged})
+                        });
+                });
             }
         })
     }
-*/
+
 
     if (plugins.sliderdetails.length) {
         $('#lightSlider').lightSlider({
@@ -668,7 +676,6 @@ $document.ready(function () {
     }
 
     // Contact page form
-/*
     if (plugins.contactForm.length) {
         var $contactform = plugins.contactForm;
         $contactform.validate({
@@ -704,26 +711,47 @@ $document.ready(function () {
                 }
             },
             submitHandler: function (form) {
-                $(form).ajaxSubmit({
-                    type: "POST",
-                    data: $(form).serialize(),
-                    url: "send-mail",
-                    success: function () {
-                        $('#success').fadeIn();
-                        $('#contactform').each(function () {
-                            this.reset();
+                grecaptcha.ready(function() {
+                    grecaptcha.execute('6Lc_H3wUAAAAAMhZ20K9fkVsCR2yMp94mZAlS6kQ', {action: 'contact'})
+                        .then(function(token) {
+                            document.getElementById('g-recaptcha-response').value=token;
+                            $(form).ajaxSubmit({
+                                type: "POST",
+                                data: $(form).serialize(),
+                                url: "send-mail",
+                                success: function () {
+                                    $('#success').fadeIn();
+                                    $('#contactform').each(function () {
+                                        this.reset();
+                                    });
+                                },
+                                error: function () {
+                                    $('#contactform').fadeTo("slow", 0, function () {
+                                        $('#error').fadeIn();
+                                    });
+                                }
+                            });
                         });
-                    },
-                    error: function () {
-                        $('#contactform').fadeTo("slow", 0, function () {
-                            $('#error').fadeIn();
-                        });
-                    }
                 });
+                // $(form).ajaxSubmit({
+                //     type: "POST",
+                //     data: $(form).serialize(),
+                //     url: "send-mail",
+                //     success: function () {
+                //         $('#success').fadeIn();
+                //         $('#contactform').each(function () {
+                //             this.reset();
+                //         });
+                //     },
+                //     error: function () {
+                //         $('#contactform').fadeTo("slow", 0, function () {
+                //             $('#error').fadeIn();
+                //         });
+                //     }
+                // });
             }
         });
     }
-*/
 
     // Booking form
     if (plugins.bookingForm.length) {

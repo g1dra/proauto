@@ -68,24 +68,63 @@ class CarController extends Controller
         return view('pages.contacts');
     }
 
-    public function sendMail(){
+    public function sendMail()
+    {
         $comment = (object) [
             'name' => $_POST['name'],
             'email' => $_POST['email'],
             'text' => $_POST['Comment']
         ];
 
-        $user = new \stdClass();
-        $user->email= "mneproauto2018@gmail.com";
+        function getUserIP()
+        {
+            // Get real visitor IP behind CloudFlare network
+            if (isset($_SERVER["HTTP_CF_CONNECTING_IP"])) {
+                $_SERVER['REMOTE_ADDR'] = $_SERVER["HTTP_CF_CONNECTING_IP"];
+                $_SERVER['HTTP_CLIENT_IP'] = $_SERVER["HTTP_CF_CONNECTING_IP"];
+            }
+            $client  = @$_SERVER['HTTP_CLIENT_IP'];
+            $forward = @$_SERVER['HTTP_X_FORWARDED_FOR'];
+            $remote  = $_SERVER['REMOTE_ADDR'];
 
-        $user2 = new \stdClass();
-        $user2->email = $_POST['email'];
-        $confirmationEmail = $_POST['email'];
+            if(filter_var($client, FILTER_VALIDATE_IP))
+            {
+                $ip = $client;
+            }
+            elseif(filter_var($forward, FILTER_VALIDATE_IP))
+            {
+                $ip = $forward;
+            }
+            else
+            {
+                $ip = $remote;
+            }
 
+            return $ip;
+        }
+        $user_ip = getUserIP();
 
-        \Mail::to($user)->send(new contactmail($comment));
-        //\Mail::to($user2)->send(new contactmail($comment));
+        $secretKey = "6Lc_H3wUAAAAAFrY5a8MEsZ40H2smUDoVIQuRSJ5";
+        $secretKeyClient = $_POST['g-recaptcha-response'];
 
+        $respons = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=".$secretKey."&response=".$secretKeyClient."&remoteip=".$user_ip);
+        $respons = json_decode($respons);
+
+        if($respons->success && $respons->score > 0.5)
+        {
+            $user = new \stdClass();
+            $user->email= "mneproauto2018@gmail.com";
+            $user2 = new \stdClass();
+            $user2->email = $_POST['email'];
+            $confirmationEmail = $_POST['email'];
+//            \Mail::to($user)->send(new contactmail($comment));
+//            \Mail::to($user2)->send(new contactmail($comment));
+            return "uspjelo";
+        }
+        else
+        {
+            return "fail";
+        }
     }
 
     public function modal($id){

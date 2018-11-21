@@ -265,6 +265,6 @@
                 <!--/.container -->
             </div>
         </div>
-
+        <script src='https://www.google.com/recaptcha/api.js?render=6Lc_H3wUAAAAAMhZ20K9fkVsCR2yMp94mZAlS6kQ'></script>
     </header>
     <!-- // Header -->

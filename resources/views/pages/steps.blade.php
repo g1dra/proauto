@@ -365,6 +365,7 @@
                                     </div>
                                 </div>
                             </fieldset>
+                            <input type="hidden" id="g-recaptcha-response" name="g-recaptcha-response">
                         </form>
                     </div>
                 </div>
