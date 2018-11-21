@@ -38,6 +38,7 @@ var globalReservationObject = {};
 /* Initialize All Scripts */
 $document.ready(function () {
 
+/*
     if (plugins.steps.length) {
         //$.amaran({content:{'message':'My first example!'}});
         var form = $("#example-advanced-form").show();
@@ -214,6 +215,7 @@ $document.ready(function () {
             }
         })
     }
+*/
 
     if (plugins.sliderdetails.length) {
         $('#lightSlider').lightSlider({
@@ -666,6 +668,7 @@ $document.ready(function () {
     }
 
     // Contact page form
+/*
     if (plugins.contactForm.length) {
         var $contactform = plugins.contactForm;
         $contactform.validate({
@@ -720,6 +723,7 @@ $document.ready(function () {
             }
         });
     }
+*/
 
     // Booking form
     if (plugins.bookingForm.length) {
