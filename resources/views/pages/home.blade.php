@@ -13,24 +13,24 @@
         <div id="htmlcaption1" class="nivo-caption">
             <div class="nivo-caption__inner">
                 <div class="text">
-                    <h1 class="showtext showtext__h1">Save 20% and get Special Offers for Winter 2018/2019 <br></h1>
-                    <span class="showtext showtext__link"><a href="/steps">Book a car and get discounts for car renting!</a></span>
+                    <h1 class="showtext showtext__h1"> ProAuto is currently in maintenance mode pls conntact me at reservationsproauto@europe.com <br></h1>
+                    {{--<span class="showtext showtext__link"><a href="/steps">Book a car and get discounts for car renting!</a></span>--}}
                 </div>
             </div>
         </div>
         <div id="htmlcaption2" class="nivo-caption">
             <div class="nivo-caption__inner left-side">
                 <div class="text">
-                    <h1 class="showtext showtext__h1">Our best deal for 10+ days! <br></h1>
-                    <span class="showtext showtext__link"><a href="/steps/3">Get Hyundai i10 for only 18 € per day </a></span>
+                    <h1 class="showtext showtext__h1"> ProAuto is currently in maintenance mode pls conntact me at reservationsproauto@europe.com <br></h1>
+                    {{--<span class="showtext showtext__link"><a href="/steps/3">Get Hyundai i10 for only 18 € per day </a></span>--}}
                 </div>
             </div>
         </div>
         <div id="htmlcaption3" class="nivo-caption">
             <div class="nivo-caption__inner  left-side">
                 <div class="text">
-                    <h1 class="showtext showtext__h1">Get Special Offers for Summer 2018 <br></h1>
-                    <span class="showtext showtext__link"><a href="#">Book a car and get discounts for car renting!</a></span>
+                    <h1 class="showtext showtext__h1"> ProAuto is currently in maintenance mode pls conntact me at reservationsproauto@europe.com <br></h1>
+                    {{--<span class="showtext showtext__link"><a href="#">Book a car and get discounts for car renting!</a></span>--}}
                 </div>
             </div>
         </div>
