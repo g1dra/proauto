@@ -1,0 +1,74 @@
+
+/*--------------------------------------------------------------
+# Blog pages
+--------------------------------------------------------------*/
+@import "blog";
+
+.page {
+	&__about {
+		.info-box {
+			padding: 4.7% 0 4.45%;
+			@include media-breakpoint-up(xl) {
+				padding: 8.7% 0 8.45%;
+			}
+		}
+	}
+	&__fleet {
+		.breadcrumbs {
+			margin-bottom: 24px;
+		}
+		.carousel-models_fullwidth {
+			@include media-breakpoint-up(xl) {
+				margin-bottom: 114px;
+			}
+		}
+		.pagination {
+			padding-top: 12px;
+		}
+	}
+	&__services {
+		@include media-breakpoint-up(xl) {
+			.service-info-box {
+				padding-top: 10px;
+				padding-bottom: 158px;
+				.text-link {
+					margin-bottom: 62px;
+				}
+			}
+			.phone-box {
+				padding-bottom: 156px;
+			}
+			.services-box {
+				margin-bottom: 55px;
+			}
+		}
+	}
+	&__contacts {
+		.breadcrumbs {
+			margin-bottom: 0;
+		}
+		.info-box {
+			@include media-breakpoint-up(xl) {
+				padding: 4.9% 0 8.6%;
+			}
+		}
+	}
+	&__typography {
+		.page-content {
+			padding-bottom: 50px;
+		}
+	}
+	&__fleet-sec {
+		.gallery__item{
+			float: none;
+			width: auto;
+			padding-bottom: 30px;
+			.btn-mini{
+				display: inline-block;
+			}
+			@include media-breakpoint-up(xl) {
+				padding-bottom: 0;
+			}
+		}
+	}
+}

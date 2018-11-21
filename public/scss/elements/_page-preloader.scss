@@ -1,0 +1,337 @@
+/*--------------------------------------------------------------
+# PreLoader
+--------------------------------------------------------------*/
+.plash {
+	position: fixed;
+	z-index: 10000;
+	background: $color__white;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+#scene {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin: -135px 0 0 -100px;
+	z-index: 100000;
+	width: 200px;
+	height: 200px;
+	box-sizing: border-box;
+	border-radius: 620px;
+	overflow: hidden;
+	-moz-perspective:120px;
+	-moz-transform-style:preserve-3d;
+	-moz-perspective-origin:50% 50%;
+	-webkit-perspective: 120;
+	-webkit-perspective-origin-x: 50%;
+	-webkit-perspective-origin-y: 50%;
+	perspective: 120;
+	perspective-origin-x: 50%;
+	perspective-origin-y: 50%;
+
+	box-shadow: 0 0 5px rgba(102, 120, 234, 0.5);
+	background: $color__background-loader;
+	border-radius: 50%;
+
+
+	&:after {
+		position: absolute;
+		content: "";
+		width: 50px;
+		height: 35px;
+		bottom: 30%;
+		left: 50%;
+		background: url(../images/car_loader.png) 0 0 no-repeat;
+		background-size: 100%;
+		z-index: 1;
+		@include rotate(-90deg);
+		@include transition(all 2s ease);
+		-webkit-animation: drive_first 3100ms infinite ease;
+		-moz-animation: drive_first 3100ms infinite ease;
+		-ms-animation: drive_first 3100ms infinite ease;
+		-o-animation: drive_first 3100ms infinite ease;
+		animation: drive_first 3100ms infinite ease;
+	}
+
+	> span {
+		position: absolute;
+		width: 50px;
+		height: 35px;
+		left: 20%;
+		bottom: 80%;
+		background: url(../images/car_loader.png) 0 0 no-repeat;
+		background-size: 100%;
+		z-index: 1;
+		@include rotate(-90deg);
+		@include transition(all 10s ease);
+		-webkit-animation: drive 2100ms infinite ease;
+		-moz-animation: drive 2100ms infinite ease;
+		-ms-animation: drive 2100ms infinite ease;
+		-o-animation: drive 2100ms infinite ease;
+		animation: drive 2100ms infinite ease;
+	}
+}
+
+.loading {
+	top: 50%;
+	margin-top:93px;
+	position: absolute;
+	bottom: 0;
+	font-size: 30px;
+	width: 100%;
+	box-sizing: border-box;
+	color: $color__blue;
+	font-weight: bold;
+	text-align: center;
+
+	> span {
+		-webkit-animation: fadeIn 1100ms infinite ease;
+		-moz-animation: fadeIn 1100ms infinite ease;
+		-ms-animation: fadeIn 1100ms infinite ease;
+		-o-animation: fadeIn 1100ms infinite ease;
+		animation: fadeIn 1100ms infinite ease;
+	}
+
+	&.loading-second {
+		margin-top: 0;
+	}
+}
+
+#road {
+	overflow: hidden;
+	margin: 0 auto;
+	width: 100%;
+	background: $color__blue;
+	position: absolute;
+	right: 0;
+	top: 0;
+	border-top: none;
+	border-bottom: none;
+
+	&:after, &:before {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		content: "";
+		width: 2px;
+		background: $color__white;
+	}
+	&:after {
+		right: 16px;
+	}
+	&:before {
+		left: 16px;
+	}
+}
+
+#stripes {
+	-webkit-animation: striper 1100ms infinite linear;
+	-moz-animation: striper 1100ms infinite linear;
+	-ms-animation: striper 1100ms infinite linear;
+	-o-animation: striper 1100ms infinite linear;
+	animation: striper 1100ms infinite linear;
+	width: 0px;
+	height: 1200px;
+	margin: 0 auto;
+	border: dashed 2px $color__white;
+	border-left:none;
+	position: relative;
+	top: -200px;
+}
+
+
+@-webkit-keyframes "fadeIn" {
+	0% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+@-moz-keyframes "fadeIn" {
+	0% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+@-o-keyframes "fadeIn" {
+	0% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+@-ms-keyframes "fadeIn" {
+	0% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+@keyframes "fadeIn" {
+	0% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+@-webkit-keyframes "drive_first" {
+	0% {
+		bottom: -70%;
+	}
+
+	100% {
+		bottom: 180%;
+	}
+}
+
+@-moz-keyframes "drive_first" {
+	0% {
+		bottom: -70%;
+	}
+
+	100% {
+		bottom: 180%;
+	}
+}
+
+@-ms-keyframes "drive_first" {
+	0% {
+		bottom: -70%;
+	}
+
+	100% {
+		bottom: 180%;
+	}
+}
+
+@-o-keyframes "drive_first" {
+	0% {
+		bottom: -70%;
+	}
+
+	100% {
+		bottom: 180%;
+	}
+}
+
+@keyframes "drive_first" {
+	0% {
+		bottom: -70%;
+	}
+
+	100% {
+		bottom: 180%;
+	}
+}
+
+@-webkit-keyframes "drive" {
+	0% {
+		bottom: -50%;
+	}
+
+	100% {
+		bottom: 150%;
+	}
+}
+@-moz-keyframes "drive" {
+	0% {
+		bottom: -50%;
+	}
+
+	100% {
+		bottom: 150%;
+	}
+}
+@-o-keyframes "drive" {
+	0% {
+		bottom: -50%;
+	}
+
+	100% {
+		bottom: 150%;
+	}
+}
+@-ms-keyframes "drive" {
+	0% {
+		bottom: -50%;
+	}
+
+	100% {
+		bottom: 150%;
+	}
+}
+@keyframes "drive" {
+	0% {
+		bottom: -50%;
+	}
+
+	100% {
+		bottom: 150%;
+	}
+}
+
+@-webkit-keyframes "striper" {
+	 0% {
+		top: -200px;
+	}
+	 100% {
+		top: 0px;
+	}
+}
+@-moz-keyframes "striper" {
+	 0% {
+		top: -200px;
+	}
+	 100% {
+		top: 0px;
+	}
+}
+@-ms-keyframes "striper" {
+	 0% {
+		top: -200px;
+	}
+	 100% {
+		top: 0px;
+	}
+}
+@-o-keyframes "striper" {
+	 0% {
+		top: -200px;
+	}
+	 100% {
+		top: 0px;
+	}
+}
+@keyframes "striper" {
+	 0% {
+		top: -200px;
+	}
+	 100% {
+		top: 0px;
+	}
+}

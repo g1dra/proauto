@@ -1,0 +1,79 @@
+// Styles for Breadcrumbs
+
+.breadcrumbs{
+	text-align: center;
+	background: $color__background-breadcrumb;
+	padding: 19px 0 22px;
+	box-sizing: border-box;
+	margin-bottom: 25px;
+	overflow: hidden;
+	@include flexbox();
+	@include align-items(center);
+
+	&.without_title {
+		@include media-breakpoint-up(xl) {
+			min-height: 132px;
+		}
+	}
+	@include media-breakpoint-up(xl) {
+		min-height: 180px;
+		margin-bottom: 95px;
+	}
+	@include media-breakpoint-up(xxl) {
+		min-height: 232px;
+	}
+	&__title {
+		font-size: 30px;
+		line-height: 1em;
+		margin-bottom: 11px;
+		@include media-breakpoint-up(xl) {
+			font-size: 64px;
+		}
+		@include media-breakpoint-up(lg) {
+			font-size: 50px;
+		}
+	}
+	.breadcrumbs__title + .breadcrumbs__items {
+		font-size: 18px;
+	}
+	&__items{
+		font-size: 16px;
+		font-weight: 500;
+		color: $color__breadcrumbs;
+
+		@include media-breakpoint-up(lg) {
+			font-size: 24px;
+		}
+
+		span {
+			display: inline-block;
+			margin: 0 16px;
+		}
+	}
+	&__item-link {
+		color: $color__breadcrumbs;
+		@include transition(0.2s);
+
+		&:hover {
+			color: $regular_link_color;
+		}
+	}
+}
+.ie{
+	.breadcrumbs{
+		&.without_title {
+			@include media-breakpoint-up(xl) {
+				height: 132px;
+			}
+		}
+		@include media-breakpoint-up(xl) {
+			height: 180px;
+		}
+		@include media-breakpoint-up(xxl) {
+			height: 232px;
+		}
+		.row div[class^="col-"]{
+			flex:inherit;
+		}
+	}
+}

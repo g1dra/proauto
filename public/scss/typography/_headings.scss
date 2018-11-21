@@ -1,0 +1,136 @@
+h1{
+	font-size: 50px;
+	line-height: 1em;
+	margin: 0 0 20px;
+	font-weight: 400;
+
+
+	
+	@include media-breakpoint-up(xxl) {
+		font-size: 64px;
+	}
+	@include media-breakpoint-up(lg) {
+		font-size: 50px;
+		margin: 0 0 35px;
+	}
+	@include media-breakpoint-down(md) {
+		font-size: 38px;
+	}
+}
+
+h2 {
+	font-size: 36px;
+	line-height: 1em;
+	margin: 0 0 20px;
+	font-weight: 400;
+	@include media-breakpoint-up(xxl) {
+		font-size: 56px;
+	}
+	@include media-breakpoint-up(lg) {
+		font-size: 46px;
+		margin: 0 0 30px;
+	}
+}
+
+h3 {
+	font-size: 25px;
+	line-height: 1em;
+	margin: 0 0 20px;
+	font-weight: 700;
+	@include media-breakpoint-up(lg) {
+		font-size: 30px;
+		margin: 0 0 25px;
+	}
+	@include media-breakpoint-up(xxl) {
+		font-size: 34px;
+	}
+	@include media-breakpoint-down(md) {
+		font-size: 28px;
+		margin: 0 0 25px;
+	}
+}
+
+h4 {
+	font-size: 20px;
+	line-height: 1.2em;
+	margin: 0 0 20px;
+	font-weight: 400;
+
+	@include media-breakpoint-up(lg) {
+		font-size: 24px;
+		margin: 0 0 25px;
+	}
+	@include media-breakpoint-down(md) {
+		font-size: 22px;
+		margin: 0 0 25px;
+	}
+}
+
+h5 {
+	font-size: 18px;
+	line-height: 1.1em;
+	font-weight: 400;
+	margin: 0 0 20px;
+	@include media-breakpoint-up(lg) {
+		font-size: 22px;
+	}
+}
+
+h6 {
+	font-size: 16px;
+	line-height: 1.2em;
+	font-weight: 400;
+	margin: 0 0 8px;
+	@include media-breakpoint-up(lg) {
+		font-size: 20px;
+	}
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: $color__text-heading;
+	&:last-child {
+		margin-bottom: 0;
+	}
+	p + & {
+		margin-top: 25px;
+		@include media-breakpoint-up(sm) {
+			margin-top: 45px;
+		}
+	}
+}
+
+.heading_block {
+	h1, h2, h3, h4, h5, h6 {
+		margin: 0 0 20px;
+		line-height: 1em;
+
+		small {
+			font-size: 14px;
+			line-height: 1em;
+			font-weight: 400;
+			display: inline-block;
+			text-transform: uppercase;
+			width: auto;
+
+			@include media-breakpoint-up(xl) {
+				width: 55px;
+			}
+		}
+	}
+}
+
+a,
+h1 a:hover,
+h2 a:hover,
+h3 a:hover,
+h4 a:hover,
+h5 a:hover,
+h6 a:hover {color: $regular_link_color;}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a,
+a:hover { color: $regular_link_hover_color; }

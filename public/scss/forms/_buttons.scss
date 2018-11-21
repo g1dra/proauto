@@ -1,0 +1,95 @@
+button,
+input[type='button'],
+input[type='reset'],
+input[type='submit'] {
+	@include btn;
+}
+
+// General styles
+.btn {
+	text-decoration: none;
+	@include btn;
+
+	&:hover {
+		text-decoration: none;
+	}
+	&:active,
+	&:focus {
+		outline: none !important;
+	}
+	&-fullwidth {
+		width: 100%;
+	}
+
+	&.btn-default {
+		background-color: transparent;
+		border: 1px solid $color__border-button;
+		color: $color__dark;
+
+		&:hover {
+			background-color: $color__border-button;
+			color: $color__white;
+		}
+	}
+	&.btn-mini {
+		padding: 14px 26px 14px;
+		font-size: 16px;
+	}
+	&.btn-alt {
+		background-color: transparent;
+		border: 1px solid $color__border-button-alt;
+		color: $color__dark;
+
+		&:hover {
+			background-color: $color__border-button-alt;
+			color: $color__white;
+		}
+	}
+	&.btn__marker {
+		background-color: transparent;
+		padding: 0;
+		border-radius: 620px;
+		color: $regular_link_color;
+		@include font-size(2.6);
+
+		&:hover {
+			color: $regular_link_hover_color;
+		}
+	}
+	&.btn-gradient {
+		color: $color__text-regular;
+		box-shadow: $button__box-shadow;
+		@include linear-gradient(#cacdd3, #7d838e);
+
+		&:hover {
+			background: $color__dark;
+			color: $color__white;
+		}
+	}
+	&.invert {
+		background: $color__dark;
+		&:hover{
+			background: $regular_link_color;
+		}
+	}
+
+	.model-info.swiper-slide-active & {
+		&:hover {
+			color: $color__dark;
+			background: $color__white;
+		}
+	}
+}
+.link {
+	display: inline-block;
+	letter-spacing: 0.72px;
+	text-transform: uppercase;
+	@include font-size(12/16);
+	line-height: 18px;
+	font-weight: 600;
+	i {
+		font-size: 14px;
+		line-height: 18px;
+		margin-left: 5px;
+	}
+}

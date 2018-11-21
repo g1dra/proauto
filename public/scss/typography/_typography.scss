@@ -1,0 +1,26 @@
+html {
+	@include font-size(1);
+}
+
+body {
+	font-family: $font__main;
+	font-size: $font__size-body-mobile;
+	line-height: $font__line-height-body-mobile;
+	color: $color__text-regular;
+	font-weight: 400;
+
+	@include media-breakpoint-up(sm) {
+		font-size: $font__size-body;
+		line-height: $font__line-height-body;
+	}
+
+	@include media-breakpoint-down(md) {
+		font-size: $font__size-body-mobile;
+		line-height: $font__line-height-body;
+	}
+}
+
+
+
+@import "headings";
+@import "copy";

@@ -1,0 +1,9 @@
+
+.comment-form {
+	padding-top: 7px;
+	padding-bottom: 30px;
+
+	@include media-breakpoint-up(xl) {
+		padding-bottom: 97px;
+	}
+}

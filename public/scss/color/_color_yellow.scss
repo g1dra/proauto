@@ -1,0 +1,208 @@
+body.color-yellow {
+		a, h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
+		color: $color__text-regular;
+	}
+	.site-footer__top-panel .top-panel__info {
+		color: $color__white;
+		strong {
+			opacity: 1;
+		}
+	}
+	.site-footer a {
+		color: $color__white;
+
+		&:hover{
+			color: $color__yellow;
+		}
+	}
+	.logo i,
+	.footer_logo i,
+	.secondeffect .first-text-block em,
+	.secondeffect .second-text-block i,
+	.secondeffect .second-text-block .title_block span,
+	.tt-list-col ul li .tt-icon,
+	.tt-list-col ul li span,
+	.header-container__flex  .tt-header-info .tt-item .tt-icon,
+	.gallery .tt-list-descriptions li span,
+	.ui-datepicker .ui-datepicker-calendar .ui-state-highlight,
+.ui-datepicker .ui-datepicker-calendar .ui-widget-content .ui-state-highlight,
+.ui-datepicker .ui-datepicker-calendar .ui-widget-header .ui-state-highlight{
+		color: $color__yellow;
+	}
+	.phone_block i,
+	.social-list__icons li a:hover,
+	.nivo-caption .text .showtext__link a,
+	ul.list__marker li:before, ol.list__marker li:before,
+	.text-link,
+	.cost strong,
+	blockquote:after,
+	span.name a,
+	.phone-box__number span,
+	.contact-info i,
+	.order-details-form .text-element .add i,
+	.order-details-form a:hover,
+	.block-icon i,
+	.breadcrumbs__item-link:hover,
+	.block-team__desc span.position,
+	.block-team__desc h3 a:hover,
+	.block-tips h6,
+	ul.list-categories li:before, ol.list-categories li:before,
+	ul.list-categories li a:hover, ol.list-categories li a:hover,
+	.post-block_meta i,
+	.post-block_meta .comment:hover,
+	.post-block .thumbnail a:before,
+	.back-btn:hover,
+	.post-list__thumbnail.link-thumb .post-link:hover,
+	.comment-list li .author,
+	.comment-list li .date i,
+	.navbar .menu-navigation__list > li.current > a,
+	.navbar .menu-navigation__list > li.open > a,
+	.navbar .menu-navigation__list > li > a:hover,
+	.navigation_block .swiper-button-next:hover,
+	.navigation_block .swiper-button-prev:hover,
+	.post-list__item.format-gallery .swiper-button-next:hover,
+	.post-list__item.format-gallery .swiper-button-prev:hover,
+	.logo a span,
+	.order-details-form div.stop-location a i, #tt-mobile-top-box .tt-call-toggle ul li i,
+	.site-footer .box-elements .row > div h5:after, .site-footer .box-elements .row > div .contact-info:after {
+		color: $color__yellow;
+	}
+
+	.nivo-caption .text .showtext__link a:after,
+	.swiper-pagination-models .swiper-pagination-bullet:hover,
+	.swiper-pagination-models .swiper-pagination-bullet.swiper-pagination-bullet-active,
+	.swiper-pagination .swiper-pagination-bullet:hover:after,
+	.swiper-pagination .swiper-pagination-bullet-active:after,
+	.site-footer__top-panel,
+	.price-table__title,
+	.comment-list li .avatar,
+	.book-form,
+	.price-slider .noUi-connect,
+	.services-post h2:after, #tt-mobile-top-box .tt-list-btn li a:hover,
+	#tt-mobile-top-box .tt-list-btn .tt-btn-always,
+	.ui-datepicker .ui-datepicker-calendar .ui-state-default:hover,
+	.ui-datepicker .ui-datepicker-calendar .ui-state-active,
+	.ui-datepicker .ui-datepicker-calendar .ui-widget-content .ui-state-active,
+	.ui-datepicker .ui-datepicker-calendar .ui-widget-header .ui-state-active,
+	.ui-datepicker .ui-datepicker-calendar a.ui-button:active,
+	.ui-datepicker .ui-datepicker-calendar .ui-button:active,
+	.ui-datepicker .ui-datepicker-calendar .ui-button.ui-state-active:hover {
+		background: $color__yellow;
+	}
+	.price-table__title > td:first-child {
+		color: $color__text-regular;
+	}
+
+	.book-form-box,
+	.scrollup,
+
+	.calendar .selected, .calendar .selected:hover,
+	.contact-info-block .social-list__icons li a:hover {
+		background: $color__yellow;
+		color: $color__text-regular;
+	}
+	.navbar .menu-navigation__list li.open .dropdown-menu > li > a:hover,
+		.remodal-close,
+	.btn {
+		background: $color__yellow;
+		color: $color__white;
+	}
+	.btn.invert {
+		background: $color__dark;
+		color: $color__white;
+	}
+	.book-form__btn .btn {
+		color: $color__text-regular;
+		box-shadow: $button__box-shadow;
+		@include linear-gradient(#cacdd3, #7d838e);
+
+		&:hover {
+			background: $color__dark;
+			color: $color__white;
+		}
+	}
+	.scrollup:after {
+		box-shadow: 0 0 0 4px $color__yellow;
+	}
+	.service-block__content .btn.btn__marker {
+		color: $color__yellow;
+		&:hover {
+			color: $color__text-regular;
+		}
+	}
+	.btn.btn__marker {
+		background: transparent;
+		color: $color__white;
+		&:hover {
+			background: transparent;
+			color: $color__yellow;
+		}
+	}
+	.btn{
+		&:hover {
+			background: $color__blue;
+			color: $color__white;
+		}
+	}
+	.filters-by-category ul li a:hover,
+	.filters-by-category ul li a.selected,
+	.pagination li:hover a,
+	.pagination li.active a,
+	.tag:hover, .list-tags li a:hover {
+		background: $color__yellow;
+		border-color: $color__yellow;
+		color: $color__white;
+	}
+	.pagination li a {
+		background: $color__white;
+		border-color:  $color__border-abbr;
+		color: $color__text-regular;
+	}
+	.gallery__item__content a.link-gallery {
+		&:hover {
+			color: $color__yellow;
+		}
+	}
+	.block-tips .number {
+		background: $color__yellow;
+		color: $color__text-regular;
+	}
+	.block-tips .number:after,
+	.comment-list li .avatar:before,
+	.contact-info-block .social-list__icons li a:after {
+		border-color: $color__yellow transparent transparent transparent;
+	}
+	.gallery__item .hover > i {
+		background: $color__yellow;
+		color: $color__white;
+		opacity: 0.7;
+	}
+	.contact-info-block .social-list__icons li a {
+		border-color: $color__yellow;
+	}
+
+
+	.loading {
+		color: $color__text-regular;
+	}
+	#road:after, #road:before {
+		background:  $color__yellow;
+	}
+	#stripes,
+	.price-slider .noUi-horizontal .noUi-handle {
+		border-color: $color__yellow;
+	}
+	#scene {
+		color: $color__yellow;
+	}
+	#road {
+		background: $color__text-regular;
+	}
+}
+
+
+
+.navbar .menu-navigation__list > li.current > a, .navbar .menu-navigation__list > li.open > a,
+.navbar .menu-navigation__list > li.open > a:hover, .navbar .menu-navigation__list > li > a:hover {
+	text-shadow: none;
+}

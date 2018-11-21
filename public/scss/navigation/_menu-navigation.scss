@@ -1,0 +1,268 @@
+// Styles for Menu
+
+.header-navigation-wrap,
+.mobile-top-panel__fixed {
+	.navbar-fixed-top {
+		border: none;
+		margin: 0;
+
+		@include media-breakpoint-up(md) {
+			position: relative;
+		}
+	}
+
+	.navbar-default {
+		background: none;
+
+		.navbar-header {
+			.navbar-toggle {
+				background: none;
+				border: none;
+				float: left;
+				margin: 6px 0 0;
+
+				.icon-bar {
+					background: $color__darker;
+					position: relative;
+					@include transition(0.3s);
+				}
+				&.opened {
+					.icon-bar:nth-child(2n+1) {
+						opacity: 0;
+					}
+					.sr-only + .icon-bar {
+						top: 6px;
+						@include rotate(45deg);
+					}
+					.icon-bar:last-child {
+						top: -6px;
+						@include rotate(-45deg);
+					}
+				}
+			}
+		}
+	}
+}
+
+.mobile-top-panel__fixed {
+	.navbar-fixed-top {
+		z-index: 9;
+	}
+	.social-list {
+		float: right;
+		margin: 7px 5px 0 0;
+		position: relative;
+		z-index: 10;
+	}
+	.menu-navigation {
+		border: none;
+	}
+}
+
+
+.navbar {
+	min-height: auto;
+
+	.menu-navigation {
+		border: none;
+		margin: 6px 0 0;
+		margin-right: ($grid-gutter-width / -2);
+		margin-left: ($grid-gutter-width / -2);
+		padding: 20px $grid-gutter-width;
+
+		@media (max-width:767px){
+			padding: 0px $grid-gutter-width;
+			.menu-navigation__list{
+				padding-top: 20px;
+				padding-bottom: 20px;
+			}
+		}
+		@media (min-width:768px){
+			.menu-navigation__list .sub-menu li > a > i{
+				top: 4px;
+			}
+		}
+		.mobile-top-panel__fixed & {
+			background: $color__grey;
+			margin-top: 0;
+		}
+		.divider{
+			display: none;
+		}
+		@include media-breakpoint-up(lg) {
+
+			margin: 0;
+			padding: 0;
+		}
+
+		.navbar-nav {
+			margin: 0;
+		}
+
+		&__list {
+			text-transform: uppercase;
+			font-size: 16px;
+			float: none;
+
+			@include media-breakpoint-up(xl) {
+				font-size: 18px;
+			}
+
+			li {
+				position: relative;
+			}
+
+			> li {
+
+				&:first-child {
+					margin-left: 0;
+				}
+
+				> .dropdown-menu {
+					@include translate(0, 0);
+					top: 100% !important;
+					.dropdown-menu {
+						left: 100%;
+						@include media-breakpoint-up(md) {
+							//@include translate(0, -54px);
+						}
+					}
+				}
+
+				@include media-breakpoint-up(md) {
+					padding: 10px 0 10px;
+					margin: 0 5px 0 0;
+				}
+				@include media-breakpoint-up(xl) {
+					padding: 27px 0 24px;
+					margin: 0;
+				}
+
+				> a {
+					padding: 5px 0;
+					color: $color__darker;
+					text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+					@include transition(0.3s);
+					@include media-breakpoint-up(md) {
+						padding: 0;
+					}
+					&.has-submenu {
+						padding-right: 15px;
+					}
+				}
+				&.current,
+				&.open,
+				&:hover {
+					background: none;
+				}
+				&.current > a,
+				&.open > a,
+				&.open > a:hover,
+				> a:hover {
+					background: none;
+					color: $regular_link_color;
+				}
+			}
+			li.open .dropdown-menu > li > a:hover {
+				background: $color__blue;
+				color: $color__white;
+				z-index: 1000;
+			}
+
+			li {
+				>.dropdown-menu {
+					opacity: 0;
+					visibility: hidden;
+					 @media (max-width:767px){
+						background: none;
+					}
+					@include transition(0.4s);
+				}
+				&.open {
+					.dropdown-menu {
+						opacity: 1;
+						visibility: visible;
+					}
+				}
+			}
+
+			/// Styles for dropdown menu arrows
+			li {
+				a {
+					background: none;
+					i{
+						position: absolute;
+						top: 0px;
+						font-size: 1em;
+						width: 30px;
+						height: 30px;
+						line-height: 30px;
+						text-align: center;
+						text-shadow: none;
+						@include transition(0.2s);
+						@include media-breakpoint-up(md) {
+							font-size: 0.45em;
+						}
+					}
+
+				}
+			}
+
+			> li {
+				> a {
+					@include media-breakpoint-down(md) {
+						&.highlighted i{
+							@include rotate(180deg);
+						}
+					}
+					> i {
+						right: 10px;
+
+						top: -3px;
+						@include media-breakpoint-up(md) {
+							right: 0;
+							width: auto;
+							height: auto;
+						}
+					}
+				}
+
+				ul {
+					li a {
+							@include media-breakpoint-down(md) {
+								&.highlighted i{
+									@include rotate(180deg);
+								}
+							}
+							i {
+							right: 10px;
+							@include rotate(-90deg);
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.dropdown-menu {
+	padding: 10px 0;
+	min-width: 200px !important;
+	border-radius: 0;
+	border: none;
+
+	@include media-breakpoint-up(md) {
+		@include translate(0, -14px);
+		padding: 20px 0;
+	}
+	> li {
+		> a {
+			padding: 10px 20px;
+			&:hover {
+				background-color: $color__blue;
+				color: $color__white;
+			}
+		}
+	}
+}
+

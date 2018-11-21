@@ -1,0 +1,457 @@
+.slider-wrapper {
+	position: relative;
+	z-index: 999;
+}
+
+/* Caption styles */
+
+.nivo-caption {
+	position: absolute;
+	left: 0;
+	right: 0;
+	height: 90px;
+	top: 50%;
+	z-index: 10000;
+	display: none;
+	@include translate(0, -50%);
+	@include media-breakpoint-up(sm) {
+		height: 180px;
+	}
+	@include media-breakpoint-up(md) {
+		height: 280px;
+	}
+	@include media-breakpoint-up(xl) {
+		height: 408px;
+	}
+	@include media-breakpoint-up(xxl) {
+		height: 548px;
+	}
+	// resize slider  content
+	&__inner {
+		width: 155px;
+
+		@include media-breakpoint-up(sm) {
+			width: 228px;
+		}
+		@include media-breakpoint-up(md) {
+			width: 420px;
+		}
+		@include media-breakpoint-up(xl) {
+			width: 620px;
+		}
+		@include media-breakpoint-up(xxl) {
+			width: 878px;
+		}
+		&:before {
+			border-top: 45px solid transparent;
+			border-right: 15px solid rgba(18, 20, 23, 0.75);
+			border-bottom: 45px solid transparent;
+			@include media-breakpoint-up(sm) {
+				border-top-width: 90px;
+				border-right-width: 35px;
+				border-bottom-width: 90px;
+			}
+			@include media-breakpoint-up(md) {
+				border-top-width: 140px;
+				border-right-width: 50px;
+				border-bottom-width: 140px;
+			}
+			@include media-breakpoint-up(xl) {
+				border-top-width: 204px;
+				border-right-width: 100px;
+				border-bottom-width: 204px;
+			}
+			@include media-breakpoint-up(xxl) {
+				border-top-width: 274px;
+				border-right-width: 140px;
+				border-bottom-width: 274px;
+			}
+		}
+		&.left-side {
+			&:before {
+				border-top: 45px solid transparent;
+				border-left: 15px solid rgba(18, 20, 23, 0.75);
+				border-bottom: 45px solid transparent;
+				border-right: none;
+				@include media-breakpoint-up(sm) {
+					border-top-width: 90px;
+					border-left-width: 35px;
+					border-bottom-width: 90px;
+				}
+				@include media-breakpoint-up(md) {
+					border-top-width: 140px;
+					border-left-width: 50px;
+					border-bottom-width: 140px;
+				}
+				@include media-breakpoint-up(xl) {
+					border-top-width: 204px;
+					border-left-width: 100px;
+					border-bottom-width: 204px;
+				}
+				@include media-breakpoint-up(xxl) {
+					border-top-width: 274px;
+					border-left-width: 140px;
+					border-bottom-width: 274px;
+				}
+			}
+			.text {
+				padding-right: 0;
+				padding-left: 20%;
+				@include media-breakpoint-up(xxl) {
+					padding-left: 35%;
+				}
+				@include media-breakpoint-down(sm) {
+					padding-left: 15px;
+				}
+				@include media-breakpoint-only(md) {
+					padding-left: 30px;		
+				}
+			}
+		}
+
+		.text {
+			padding-right: 20%;
+
+			@include media-breakpoint-up(xxl) {
+				padding-right: 35%;
+			}
+			@include media-breakpoint-only(md) {
+				padding-right: 30px;		
+			}
+			@include media-breakpoint-down(sm) {
+				padding-right: 15px;
+			}
+			h1 {
+				font-size: 16px;
+				line-height: 1.25;
+				@include media-breakpoint-up(md) {
+					font-size: 45px;
+					line-height: 1em;
+				}
+				@include media-breakpoint-up(xl) {
+					font-size: 60px;
+					line-height: 1em;
+				}
+				@include media-breakpoint-up(xxl) {
+					font-size: 64px;
+					line-height: 1em;
+				}
+				@include media-breakpoint-down(sm) {
+					margin-bottom: 0;
+					br{display: none;}
+				}
+				@include media-breakpoint-only(md) {
+					font-size: 	38px;
+					br{display: none;}			
+				}
+			}
+			.showtext__link {
+				font-size: 12px;
+				line-height: 1em;
+				@include media-breakpoint-up(md) {
+					font-size: 20px;
+					line-height: 1em;
+				}
+				@include media-breakpoint-up(xl) {
+					font-size: 30px;
+					line-height: 1em;
+				}
+				@include media-breakpoint-up(xxl) {
+					font-size: 34px;
+					line-height: 1em;
+				}
+				@include media-breakpoint-down(xs) {
+					display: none;
+				}
+				@include media-breakpoint-only(md) {
+					font-size: 	24px;			
+				}
+			}
+		}
+	}
+
+
+	&__inner {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		padding: 0;
+		background: rgba(18, 20, 23, 0.75);
+		box-sizing: border-box;
+
+		&:before {
+			position: absolute;
+			top: 0;
+			right: 100%;
+			content: "";
+			width: 0;
+			height: 0;
+		}
+
+		&.left-side {
+			right: auto;
+			left: 0;
+
+			&:before {
+				right: auto;
+				left: 100%;
+			}
+
+			.text {
+				text-align: left;
+			}
+		}
+	}
+
+	.text {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		width: 100%;
+		text-align: right;
+		@include flexbox();
+		@include flex-direction(column);
+		@include justify-content(center);
+
+		h1{
+			color: $color__white;
+
+			@include media-breakpoint-up(md) {
+				letter-spacing: -1px;
+			}
+		}
+		.showtext__link {
+
+			a {
+				position: relative;
+				@include transition(0.3s);
+
+				&:after {
+					position: absolute;
+					left: 0;
+					right: 100%;
+					bottom: 0;
+					content: "";
+					height: 2px;
+					background: $regular_link_color;
+					@include transition(0.4s);
+				}
+				&:hover {
+					color: $color__white;
+					&:after {
+						right: 0;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+.nivo-caption p {
+	padding: 5px;
+	margin: 0;
+}
+
+.nivo-caption a {
+	display: inline !important;
+}
+
+.nivo-html-caption {
+	display: none;
+}
+
+
+/* Direction nav styles (e.g. Next & Prev) */
+
+.nivo-directionNav a {
+	position: absolute;
+	top: 50%;
+	z-index: 9;
+	cursor: pointer;
+}
+
+.nivo-prevNav {
+	left: 0px;
+}
+
+.nivo-nextNav {
+	right: 0px;
+}
+
+
+/* Control nav styles (e.g. 1,2,3...) */
+
+.nivo-controlNav {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 15px;
+	text-align: center;
+	padding: 10px 0;
+	z-index: 1000;
+
+	.nivo-control {
+		display: inline-block;
+		width: 10px;
+		height: 10px;
+		margin: 0 5px;
+		overflow: hidden;
+		text-indent: -20px;
+		background: $regular_link_color;
+		border-radius: 620px;
+		@include transition(0.4s);
+
+		&.active, &:hover {
+			background: $color__white;
+		}
+	}
+}
+
+.nivo-controlNav a {
+	cursor: pointer;
+}
+
+.nivo-controlNav a.active {
+	font-weight: bold;
+}
+
+
+/*
+Skin Name: Nivo Slider Default Theme
+*/
+
+.theme-default .nivoSlider {
+	position: relative;
+	background: #fff;
+	margin-bottom: 0;
+}
+
+.theme-default .nivoSlider img {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	display: none;
+	@include media-breakpoint-only(md) {
+		min-height: 424px;
+		object-fit: cover;
+	}
+}
+
+.theme-default .nivoSlider a {
+	border: 0;
+	display: inline-block;
+}
+
+.theme-default .nivoSlider a.btn {
+	display: inline-block !important;
+}
+
+.theme-default .nivo-directionNav a {
+	display: block;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	border: 0;
+	opacity: 0;
+	text-align: center;
+	color: #fff;
+	z-index: 10000;
+	text-decoration: none;
+	cursor: pointer;
+	-webkit-transition: all 200ms ease-in-out;
+	-moz-transition: all 200ms ease-in-out;
+	-o-transition: all 200ms ease-in-out;
+	transition: all 200ms ease-in-out;
+
+	&:hover {
+		color: $regular_link_color;
+	}
+}
+
+.theme-default .nivo-directionNav a:before {
+	content: "\e915";
+	font-family: 'iconfont';
+	font-size: 2.5vw;
+	line-height: 1em;
+}
+
+.theme-default:hover .nivo-directionNav a {
+	opacity: 1;
+}
+
+.theme-default a.nivo-nextNav {
+	right: 15px;
+}
+
+.theme-default a.nivo-prevNav {
+	left: 15px;
+}
+
+.theme-default .nivo-directionNav a.nivo-prevNav:before {
+	content: "\e912";
+}
+
+.theme-default .nivo-controlNav.nivo-thumbs-enabled {
+	width: 100%;
+}
+
+.theme-default .nivo-controlNav.nivo-thumbs-enabled a {
+	width: auto;
+	height: auto;
+	background: none;
+	margin-bottom: 5px;
+}
+
+.theme-default .nivo-controlNav.nivo-thumbs-enabled img {
+	display: block;
+	width: 120px;
+	height: auto;
+}
+
+
+/* nivo-caption text */
+@-webkit-keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.nivo-caption__inner {
+	-webkit-animation-name: fade-in;
+	animation-name: fade-in;
+	animation-duration: 0.5s;
+	animation-delay: 0.3s;
+	animation-iteration-count: 1;
+	animation-fill-mode: backwards;
+}
+
+.nivo-caption .showtext__h1 {
+	-webkit-animation-name: fade-in;
+	animation-name: fade-in;
+	animation-duration: 0.5s;
+	animation-delay: 1s;
+	animation-iteration-count: 1;
+	animation-fill-mode: backwards;
+}
+
+.nivo-caption .showtext__link {
+	-webkit-animation-name: fade-in;
+	animation-name: fade-in;
+	animation-duration: 1s;
+	animation-delay: 2s;
+	animation-iteration-count: 1;
+	animation-fill-mode: backwards;
+}

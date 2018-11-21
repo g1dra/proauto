@@ -1,0 +1,160 @@
+// Rem output with px fallback
+@mixin font-size($sizeValue: 1) {
+	font-size: ($sizeValue * 16) * 1px;
+	font-size: $sizeValue * 1rem;
+}
+
+// Box shadow
+@mixin box-shadow {
+	box-shadow: $box__shadow_mobile;
+
+	@include media-breakpoint-up(lg) {
+		box-shadow: $box__shadow;
+	}
+}
+
+// Center block
+@mixin center-block {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+// Clearfix
+@mixin clearfix {
+	content: "";
+	display: table;
+	table-layout: fixed;
+}
+
+// Clear after (not all clearfix need this also)
+@mixin clearfix-after {
+	clear: both;
+}
+
+@mixin reset-container {
+	max-width: inherit;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+@mixin reset-list {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+@mixin btn {
+	line-height: 1;
+	display: inline-block;
+	max-width: 100%;
+	padding: $button__indents-mobile;
+	cursor: pointer;
+	text-align: center;
+	overflow: hidden;
+	vertical-align: top;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	transition: .3s;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	line-height: 1.2em;
+	outline: none;
+	border: none;
+	background: $regular_link_color;
+	color: $color__white;
+	@include font-size(0.9);
+	@include border-radius();
+	@include media-breakpoint-up(lg) {
+		@include font-size(1);
+		font-weight: 700;
+		letter-spacing: 0;
+		padding: $button__indents;
+	}
+	&:hover, &:focus {
+		background: $color__dark;
+		color: $color__white;
+	}
+}
+
+
+// Optional hyphenation
+@mixin hyphens($mode: auto) {
+	word-wrap: break-word;
+	-webkit-hyphens: $mode;
+	-moz-hyphens: $mode;
+	-ms-hyphens: $mode; // IE10+
+	-o-hyphens: $mode;
+	hyphens: $mode;
+}
+
+@mixin word-wrap {
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+	-ms-word-break: break-all;
+	word-break: break-all;
+}
+
+// .hentry, .widget
+@mixin card {
+	@include border-radius;
+}
+
+// Resize anything
+@mixin resizable($direction) {
+	resize: $direction; // Options: horizontal, vertical, both
+	overflow: auto; // Per CSS3 UI, `resize` only applies when `overflow` isn't `visible`
+}
+
+
+// Triangle
+@mixin triangle($dir, $w, $h, $clr) {
+	width: 0;
+	height: 0;
+	border-style: solid;
+
+	@if $dir == top {
+		border-width: 0 $w/2 $h $w/2;
+		border-color: transparent transparent $clr transparent;
+	} @else if $dir == bottom {
+		border-width: $h $w/2 0 $w/2;
+		border-color: $clr transparent transparent transparent;
+	} @else if $dir == left {
+		border-width: $h/2 $w $h/2 0;
+		border-color: transparent $clr transparent transparent;
+	} @else if $dir == right {
+		border-width: $h/2 0 $h/2 $w;
+		border-color: transparent transparent transparent $clr;
+	} @else if $dir == top_left {
+		border-width: $w $w 0 0;
+		border-color: $clr transparent transparent transparent;
+	} @else if $dir == top_right {
+		border-width: 0 $w $w 0;
+		border-color: transparent $clr transparent transparent;
+	} @else if $dir == bottom_right {
+		border-width: 0 0 $w $w;
+		border-color: transparent transparent $clr transparent;
+	} @else if $dir == bottom_left {
+		border-width: $w 0 0 $w;
+		border-color: transparent transparent transparent $clr;
+	}
+}
+
+@mixin linear-gradient($args...) {
+ background-image: -o-linear-gradient($args);
+ background-image: -moz-linear-gradient($args);
+ background-image: -webkit-linear-gradient($args);
+ background-image: linear-gradient($args);
+}
+
+// Opacity
+@mixin opacity($opacity) {
+	opacity: $opacity;
+	// IE8 filter
+	$opacity-ie: ($opacity * 100);
+	filter: #{alpha(opacity=$opacity-ie)};
+}
+
+@import "transform";
+@import "border-radius";
+@import "flex";
