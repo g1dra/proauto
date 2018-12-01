@@ -83,6 +83,7 @@ class ReservationController extends Controller
 
         if($respons->success && $respons->score > 0.5)
         {
+            var_dump($respons->score);
             \Mail::to($user)->send(new reservationEmail($request));
             return "uspjelo";
         }
