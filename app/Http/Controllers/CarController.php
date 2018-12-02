@@ -93,7 +93,7 @@ class CarController extends Controller
         $context  = stream_context_create($options);
         $respons = file_get_contents($url, false, $context);
         //$respons = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=".$secretKey."&response=".$secretKeyClient."&remoteip=".$remoteip);
-        var_dump($respons);
+//        var_dump($respons);
         $respons = json_decode($respons);
 
 /*
@@ -114,7 +114,7 @@ class CarController extends Controller
         // TODO && $respons->score > 0.5 DODATI
         if($respons->success )
         {
-            var_dump($respons);
+//            var_dump($respons);
             $user = new \stdClass();
             $user->email= "reservationsproauto@europe.com";
             $user2 = new \stdClass();
@@ -126,7 +126,7 @@ class CarController extends Controller
         }
         else
         {
-            var_dump($respons);
+//            var_dump($respons);
             return "fail";
         }
     }

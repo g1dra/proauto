@@ -66,18 +66,18 @@ class ReservationController extends Controller
         $context  = stream_context_create($options);
         $respons = file_get_contents($url, false, $context);
         //$respons = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=".$secretKey."&response=".$secretKeyClient."&remoteip=".$remoteip);
-        var_dump($respons);
+//        var_dump($respons);
         $respons = json_decode($respons);
         // TODO $respons->score > 0.5 DODATI
         if($respons->success)
         {
-            var_dump($respons);
+//            var_dump($respons);
             \Mail::to($user)->send(new reservationEmail($request));
             return "uspjelo";
         }
         else
         {
-            var_dump($respons);
+//            var_dump($respons);
             return "fail";
         }
     }
