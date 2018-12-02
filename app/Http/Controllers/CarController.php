@@ -86,6 +86,7 @@ class CarController extends Controller
 
         if($respons->success && $respons->score > 0.5)
         {
+            var_dump($respons);
             $user = new \stdClass();
             $user->email= "reservationsproauto@europe.com";
             $user2 = new \stdClass();
@@ -97,6 +98,7 @@ class CarController extends Controller
         }
         else
         {
+            var_dump($respons);
             return "fail";
         }
     }
