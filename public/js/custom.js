@@ -198,29 +198,29 @@ $document.ready(function () {
                 //ga('send', 'event', 'booking', 'booiking send');
                 var merged = Object.assign(reservationObj, global_car, priceObj.extrasTotal, carPrice);
 
-                // return $bookingForm.ajaxSubmit({url: '/reservation', type: 'post', data: merged})
+                 return $bookingForm.ajaxSubmit({url: '/reservation', type: 'post', data: merged})
 
-                grecaptcha.ready(function() {
-                    grecaptcha.execute('6Lc_H3wUAAAAAMhZ20K9fkVsCR2yMp94mZAlS6kQ', {action: 'steps'})
-                        .then(function(token) {
-                            document.getElementById('g-recaptcha-response').value=token;
-                            $.amaran({
-                                'inEffect'  :'slideRight',
-                                'position'  :'top right',
-                                'content':{
-                                    bgcolor:'#0096be',
-                                    color:'#fff',
-                                    delay:'3000',
-                                    message:'Your reservation request was submitted! Thank you for using ProAuto!',
-                                    icon:'fa fa-download',
-                                    sticky:'true'
-                                },
-                                theme:'colorful'
-
-                            });
-                            return $bookingForm.ajaxSubmit({url: '/reservation', type: 'post', data: merged})
-                        });
-                });
+                // grecaptcha.ready(function() {
+                //     grecaptcha.execute('6Lc_H3wUAAAAAMhZ20K9fkVsCR2yMp94mZAlS6kQ', {action: 'steps'})
+                //         .then(function(token) {
+                //             //document.getElementById('g-recaptcha-response').value=token;
+                //             $.amaran({
+                //                 'inEffect'  :'slideRight',
+                //                 'position'  :'top right',
+                //                 'content':{
+                //                     bgcolor:'#0096be',
+                //                     color:'#fff',
+                //                     delay:'3000',
+                //                     message:'Your reservation request was submitted! Thank you for using ProAuto!',
+                //                     icon:'fa fa-download',
+                //                     sticky:'true'
+                //                 },
+                //                 theme:'colorful'
+                //
+                //             });
+                //             return $bookingForm.ajaxSubmit({url: '/reservation', type: 'post', data: merged})
+                //         });
+                // });
             }
         })
     }
@@ -712,13 +712,14 @@ $document.ready(function () {
                 }
             },
             submitHandler: function (form) {
-                grecaptcha.ready(function() {
+                /*grecaptcha.ready(function() {
                     grecaptcha.execute('6Lc_H3wUAAAAAMhZ20K9fkVsCR2yMp94mZAlS6kQ', {action: 'contact'})
                         .then(function(token) {
-                            document.getElementById('g-recaptcha-response').value=token;
+                            console.log(token);
+                            //document.getElementById('g-recaptcha-response').value=token;
                             $(form).ajaxSubmit({
                                 type: "POST",
-                                data: $(form).serialize(),
+                                data: $(form).serialize()+ "&g-recaptcha-response=" + token,
                                 url: "send-mail",
                                 success: function () {
                                     $('#success').fadeIn();
@@ -733,23 +734,23 @@ $document.ready(function () {
                                 }
                             });
                         });
+                });*/
+                $(form).ajaxSubmit({
+                    type: "POST",
+                    data: $(form).serialize(),
+                    url: "send-mail",
+                    success: function () {
+                        $('#success').fadeIn();
+                        $('#contactform').each(function () {
+                            this.reset();
+                        });
+                    },
+                    error: function () {
+                        $('#contactform').fadeTo("slow", 0, function () {
+                            $('#error').fadeIn();
+                        });
+                    }
                 });
-                // $(form).ajaxSubmit({
-                //     type: "POST",
-                //     data: $(form).serialize(),
-                //     url: "send-mail",
-                //     success: function () {
-                //         $('#success').fadeIn();
-                //         $('#contactform').each(function () {
-                //             this.reset();
-                //         });
-                //     },
-                //     error: function () {
-                //         $('#contactform').fadeTo("slow", 0, function () {
-                //             $('#error').fadeIn();
-                //         });
-                //     }
-                // });
             }
         });
     }

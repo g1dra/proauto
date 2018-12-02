@@ -82,3 +82,16 @@
     </div>
 </main>
 @endsection
+@section('notification.footer')
+    <script>
+        $( document ).ready(function() {
+            grecaptcha.ready(function() {
+                grecaptcha.execute('6Lc_H3wUAAAAAMhZ20K9fkVsCR2yMp94mZAlS6kQ', {action: 'steps'})
+                    .then(function(token) {
+                        document.getElementById('g-recaptcha-response').value=token;
+                    })
+            })
+        });
+    </script>
+    <script src="/js/plugins/jquery.amaran.min.js"></script>
+@endsection

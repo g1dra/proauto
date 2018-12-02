@@ -52,17 +52,32 @@ class ReservationController extends Controller
         $secretKey = "6Lc_H3wUAAAAAFrY5a8MEsZ40H2smUDoVIQuRSJ5";
         $secretKeyClient = $_POST['g-recaptcha-response'];
         $remoteip = $_SERVER['REMOTE_ADDR'];
-        $respons = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=".$secretKey."&response=".$secretKeyClient."&remoteip=".$remoteip);
+        var_dump('reponse je ',$secretKeyClient);
+        $url = 'https://www.google.com/recaptcha/api/siteverify';
+        $data = array('secret' => $secretKey, 'response' => $secretKeyClient, 'remoteip' => $remoteip);
+
+        $options = array(
+            'http' => array(
+                'header'  => "Content-type: application/x-www-form-urlencoded\r\n",
+                'method'  => 'POST',
+                'content' => http_build_query($data)
+            )
+        );
+        $context  = stream_context_create($options);
+        $respons = file_get_contents($url, false, $context);
+        //$respons = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=".$secretKey."&response=".$secretKeyClient."&remoteip=".$remoteip);
+        var_dump($respons);
         $respons = json_decode($respons);
-        if($respons->success && $respons->score > 0.5)
+        // TODO $respons->score > 0.5 DODATI
+        if($respons->success)
         {
             var_dump($respons);
-            \Mail::to($user)->send(new reservationEmail($request));
+            //\Mail::to($user)->send(new reservationEmail($request));
             return "uspjelo";
         }
         else
         {
-            var_dump($respons->score);
+            var_dump($respons);
             return "fail";
         }
     }
