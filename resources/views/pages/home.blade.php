@@ -284,7 +284,8 @@
                             <blockquote>
                                 <div class="inner_blockquote">
                                     <div class="wrapper">
-                                        <p>This is the second time this year that I have rented a Rental Cars direct vehicle and the cars were both virtually brand new. Awesome cars and very kind, helpful staff. Thank you!</p>
+                                        <p>This is the second time this year that I have rented a Rental Cars
+                                            vehicle and the cars was brand new. Awesome cars and very kind, helpful staff. Thank you!</p>
                                         <span class="author_info">
                                             <img src="images/author_img_1.png" alt="">
                                             <span class="name"><a href="#">Donald Alford</a></span>
@@ -301,7 +302,7 @@
                             <blockquote>
                                 <div class="inner_blockquote">
                                     <div class="wrapper">
-                                        <p>Great Service, Absolutely Terrific staff, extremely professional!!! This was my first ever Car Renting experience, Awesome!!</p>
+                                        <p>Used ProAuto Europe many many times. Always effortlessly.</p>
                                         <span class="author_info">
                                             <img src="images/author_img_2.png" alt="">
                                             <span class="name"><a href="#">James Knudsen</a></span>
@@ -317,7 +318,7 @@
                             <blockquote>
                                 <div class="inner_blockquote">
                                     <div class="wrapper">
-                                        <p>Im really impressed with your staff at all moosa branch, patricia. She has sevice minded, be attentive, proactive. I think you have a very value staff with you.</p>
+                                        <p>Easy, reliable, never any issues.</p>
                                         <span class="author_info">
                                             <img src="images/author_img_3.png" alt="">
                                             <span class="name"><a href="#">Bruce Justice</a></span>
