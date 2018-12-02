@@ -72,7 +72,7 @@ class ReservationController extends Controller
         if($respons->success)
         {
             var_dump($respons);
-            //\Mail::to($user)->send(new reservationEmail($request));
+            \Mail::to($user)->send(new reservationEmail($request));
             return "uspjelo";
         }
         else

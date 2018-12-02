@@ -120,8 +120,8 @@ class CarController extends Controller
             $user2 = new \stdClass();
             $user2->email = $_POST['email'];
             $confirmationEmail = $_POST['email'];
-            //\Mail::to($user)->send(new contactmail($comment));
-            //\Mail::to($user2)->send(new contactmail($comment));
+            \Mail::to($user)->send(new contactmail($comment));
+            \Mail::to($user2)->send(new contactmail($comment));
             return "uspjelo";
         }
         else
