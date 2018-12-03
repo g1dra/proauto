@@ -129,11 +129,14 @@
 
         </div>
         <ul class="tt-list-btn">
-            <li style="color:#0096be; border: #0096be 2px solid; width: 100%; text-align: center" ><a href="#" data-target="tt-search-toggle" class="tt-btn-toggle">
-                    <i class="icon-car2"></i>
-                    <span class="tt-text">BOOK NOW</span>
-                </a>
-            </li>
+
+            <a href="#" data-target="tt-search-toggle" class="tt-btn-toggle" style="width: 100%; text-align: center">
+                <li style="border: #0096be 2px solid; width: 100%; text-align: center; border-radius: 5px;">
+                <i class="icon-car2"></i>
+                <span class="tt-text">BOOK NOW</span>
+                </li>
+            </a>
+
         </ul>
     </div>
     <header class="site-header">
