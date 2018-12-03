@@ -1,7 +1,7 @@
 
 {{--<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>--}}
 <!-- Global site tag (gtag.js) - Google Analytics -->
-{{--<script async src="https://www.googletagmanager.com/gtag/js?id=UA-121201987-1"></script>--}}
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-121201987-1"></script>
 
 <script src="/js/jquery.1.12.4.min.js"></script>
 <script src="/js/plugins/jquery-ui.min.js"></script>
