@@ -129,9 +129,9 @@
 
         </div>
         <ul class="tt-list-btn">
-            <li style="color:#0096be"><a href="#" data-target="tt-search-toggle" class="tt-btn-toggle">
+            <li style="color:#0096be; border: #0096be 2px solid; width: 100%; text-align: center" ><a href="#" data-target="tt-search-toggle" class="tt-btn-toggle">
                     <i class="icon-car2"></i>
-                    <span class="tt-text">Search Auto</span>
+                    <span class="tt-text">BOOK NOW</span>
                 </a>
             </li>
         </ul>
