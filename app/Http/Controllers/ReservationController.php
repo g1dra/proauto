@@ -71,13 +71,13 @@ class ReservationController extends Controller
         // TODO $respons->score > 0.5 DODATI
         if($respons->success)
         {
-//            var_dump($respons);
+            var_dump($respons);
             \Mail::to($user)->send(new reservationEmail($request));
             return "uspjelo";
         }
         else
         {
-//            var_dump($respons);
+            var_dump($respons);
             return "fail";
         }
     }
