@@ -112,8 +112,8 @@ class CarController extends Controller
         $respons = json_decode($curlData);
 */
         // TODO && $respons->score > 0.5 DODATI
-        if($respons->success )
-        {
+        //if($respons->success )
+        //{
 //            var_dump($respons);
             $user = new \stdClass();
             $user->email= "reservationsproauto@europe.com";
@@ -123,12 +123,12 @@ class CarController extends Controller
             \Mail::to($user)->send(new contactmail($comment));
             \Mail::to($user2)->send(new contactmail($comment));
             return "uspjelo";
-        }
-        else
-        {
+        //}
+        //else
+        //{
 //            var_dump($respons);
-            return "fail";
-        }
+          //  return "fail";
+        //}
     }
 
     public function modal($id){

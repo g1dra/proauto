@@ -69,17 +69,8 @@ class ReservationController extends Controller
 //        var_dump($respons);
         $respons = json_decode($respons);
         // TODO $respons->score > 0.5 DODATI
-        if($respons->success)
-        {
-            var_dump($respons);
-            \Mail::to($user)->send(new reservationEmail($request));
-            return "uspjelo";
-        }
-        else
-        {
-            var_dump($respons);
-            return "fail";
-        }
+        \Mail::to($user)->send(new reservationEmail($request));
+        //var_dump($respons);
     }
 
     public function orderForm(){
