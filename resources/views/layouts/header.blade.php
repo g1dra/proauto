@@ -145,7 +145,9 @@
             <div class="container">
                 <div class="navbar navbar-default navbar-fixed-top" role="navigation">
                     <div class="navbar-header">
+                        <a href="/">
                         <img src="/images/logo/logo-no-bg-small.png" style="left:0; position: relative;">
+                        </a>
                         <a class="menu-open">
                             <i class="icon-three"></i>
                         </a>
