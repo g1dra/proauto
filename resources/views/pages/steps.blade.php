@@ -1,7 +1,7 @@
 @extends('layouts.master')
 @section('notification-header')
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet" type='text/css'>
     <link rel="stylesheet" href="/css/plugins/amaran.min.css">
 @endsection
 @section('page-content')
