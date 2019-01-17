@@ -65,7 +65,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 col-md-6">
-                    <div class="copyright"><span class="copyright-year">&copy; 2018 All rights reserved</span> {{--<a href="#" class="privacy_policy">Privacy Policy</a> <a href="#">Rental policy</a>--}}</div>
+                    <div class="copyright"><span class="copyright-year">Pro Auto &copy; 2019 All rights reserved</span> {{--<a href="#" class="privacy_policy">Privacy Policy</a> <a href="#">Rental policy</a>--}}</div>
                 </div>
                 <div class="col-xs-12 col-md-6">
                     <div class="social-list">
