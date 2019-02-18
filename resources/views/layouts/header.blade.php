@@ -39,6 +39,17 @@
         <link href="/iconfont/style.css" rel="stylesheet">
         <!-- Google Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+        <!-- Hotjar Tracking Code for https://www.proauto.me/ -->
+        <script>
+            (function(h,o,t,j,a,r){
+                h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+                h._hjSettings={hjid:1203713,hjsv:6};
+                a=o.getElementsByTagName('head')[0];
+                r=o.createElement('script');r.async=1;
+                r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+                a.appendChild(r);
+            })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+        </script>
         {{--<script type="text/javascript" src="/js/snowstorm.js"></script>--}}
     </head>
 
@@ -220,7 +231,7 @@
                         </div>
                         <div class="tt-description">
                              Mon-Sun:	8:00 - 20:00<br>
-                            <a href="/contacts" style="color: ">  {{"proauto1@mail.com"}}</a>
+                            <a href="/contacts" style="">  {{"proauto1@mail.com"}}</a>
                         </div>
                     </div>
                 </div>

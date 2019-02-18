@@ -154,11 +154,11 @@ $document.ready(function () {
                         gallery[global_car.id-1].className += " gallery__item__hover";
                     }
 
-                    if(typeof(global_car) == "object" && global_car.id == 3)
-                    {
-                        var gallery = document.querySelectorAll('#gallery > .gallery__item');
-                        gallery[2].children[1].children[3].innerHTML = '<span id="price"><strong>18€</strong>/ day </span>';
-                    }
+                    // if(typeof(global_car) == "object" && global_car.id == 3)
+                    // {
+                    //     var gallery = document.querySelectorAll('#gallery > .gallery__item');
+                    //     gallery[2].children[1].children[3].innerHTML = '<span id="price"><strong>18€</strong>/ day </span>';
+                    // }
 
 
                 }
@@ -1276,9 +1276,6 @@ function calculatePrice() {
         price = global_car.price_6;
     else if (timeDiff.days > 6)
         price = global_car.price_14;
-
-    if (timeDiff.days > 10)
-        price = 18;
     return price;
 }
 
