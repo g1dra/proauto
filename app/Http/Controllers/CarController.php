@@ -116,7 +116,7 @@ class CarController extends Controller
         //{
 //            var_dump($respons);
             $user = new \stdClass();
-            $user->email= "reservationsproauto@europe.com";
+            $user->email= "reservationsproauto@gmail.com";
             $user2 = new \stdClass();
             $user2->email = $_POST['email'];
             $confirmationEmail = $_POST['email'];

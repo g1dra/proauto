@@ -30,7 +30,7 @@
                     <h5>Company</h5>
                     <ul class="footer-list">
                         <li><a href="/contact">About us</a></li>
-                        <li><a href="/posts">News</a></li>
+                        {{--<li><a href="/posts">News</a></li>--}}
                         <li><a href="/contact">Contact</a></li>
                     </ul>
                 </div>
@@ -40,7 +40,7 @@
                         <li><a href="/posts">Blog</a></li>
                         <li><a href="/faq">FAQs</a></li>
                         <li><a href="/services">Help renting a car</a></li>
-                        <li><a href="/terms">Terms and Conditions</a></li>
+                        <li><a href="/rental-terms">Terms and Conditions</a></li>
                     </ul>
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
