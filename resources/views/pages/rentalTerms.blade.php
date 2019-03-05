@@ -180,9 +180,6 @@
                                 <p>VEHICLE</p>
                             </td>
                             <td>
-                                <p>Excess (DEDUCTIBLE)</p>
-                            </td>
-                            <td>
                                 <p>Reduced Excess (REDUCED DEDUCTIBLE)</p>
                             </td>
                         </tr>
@@ -190,9 +187,7 @@
                             <td>
                                 <p>GROUP A1 CHEVROLET SPARK or similar</p>
                             </td>
-                            <td>
-                                <p>800&euro;</p>
-                            </td>
+
                             <td>
                                 <p>400&euro;</p>
                             </td>
@@ -201,9 +196,7 @@
                             <td>
                                 <p>GROUP B DACIA SANDERO or similar</p>
                             </td>
-                            <td>
-                                <p>900&euro;</p>
-                            </td>
+
                             <td>
                                 <p>450&euro;</p>
                             </td>
@@ -212,9 +205,7 @@
                             <td>
                                 <p>GROUP B1 PEUGEOT 207 or similar</p>
                             </td>
-                            <td>
-                                <p>1000&euro;</p>
-                            </td>
+
                             <td>
                                 <p>450&euro;</p>
                             </td>
@@ -223,9 +214,7 @@
                             <td>
                                 <p>GROUP C PEUGEOT 308 or similar</p>
                             </td>
-                            <td>
-                                <p>1200&euro;</p>
-                            </td>
+
                             <td>
                                 <p>600&euro;</p>
                             </td>
@@ -234,9 +223,7 @@
                             <td>
                                 <p>GROUP H PEUGEOT 5008&nbsp; or similar</p>
                             </td>
-                            <td>
-                                <p>1800&euro;</p>
-                            </td>
+
                             <td>
                                 <p>700&euro;</p>
                             </td>
@@ -246,9 +233,6 @@
                                 <p>GROUP F CITROEN C5 AUT. Or similar</p>
                             </td>
                             <td>
-                                <p>2000&euro;</p>
-                            </td>
-                            <td>
                                 <p>1100&euro;</p>
                             </td>
                         </tr>
@@ -256,18 +240,15 @@
                     </table>
 
                     <p>
-                        The renter can also choose RCDW (reduced collision damage waiver) or SCDW (super collision
-                        damage waiver), where personal liability is partly or fully reduced.
+                        The renter can also choose SCDW (super collision
+                        damage waiver), where personal liability is fully reduced.
                     </p>
 
                     <table class="price-table">
                         <tbody>
-                        <tr>
+                        <tr class="price-table__title">
                             <td>
                                 <p>VEHICLE</p>
-                            </td>
-                            <td>
-                                <p>RCDW/day</p>
                             </td>
                             <td>
                                 <p>SCDW/day</p>
@@ -278,18 +259,12 @@
                                 <p>GROUP A1 CHEVROLET SPARK or similar</p>
                             </td>
                             <td>
-                                <p>5&euro;</p>
-                            </td>
-                            <td>
                                 <p>7&euro;</p>
                             </td>
                         </tr>
                         <tr>
                             <td>
                                 <p>GROUP B DACIA SANDERO or similar</p>
-                            </td>
-                            <td>
-                                <p>5&euro;</p>
                             </td>
                             <td>
                                 <p>9&euro;</p>
@@ -300,18 +275,12 @@
                                 <p>GROUP B1 PEUGEOT 207 or similar</p>
                             </td>
                             <td>
-                                <p>6&euro;</p>
-                            </td>
-                            <td>
                                 <p>10&euro;</p>
                             </td>
                         </tr>
                         <tr>
                             <td>
                                 <p>GROUP C PEUGEOT 308 or similar</p>
-                            </td>
-                            <td>
-                                <p>8&euro;</p>
                             </td>
                             <td>
                                 <p>11&euro;</p>
@@ -322,18 +291,12 @@
                                 <p>GROUP H PEUGEOT 5008&nbsp; or similar</p>
                             </td>
                             <td>
-                                <p>12&euro;</p>
-                            </td>
-                            <td>
                                 <p>15&euro;</p>
                             </td>
                         </tr>
                         <tr>
                             <td>
                                 <p>GROUP F CITROEN C5 AUT. Or similar</p>
-                            </td>
-                            <td>
-                                <p>15&euro;</p>
                             </td>
                             <td>
                                 <p>25&euro;</p>
