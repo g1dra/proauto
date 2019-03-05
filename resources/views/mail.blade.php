@@ -6,7 +6,7 @@
         Visit ProAuto.me
     @endcomponent
 
-    Thank you for using our services , you will be contacted as soon as possible<br>
-    Best regards,<br>
+    Thank you for using our services , you will be contacted as soon as possible
+    Best regards,
     ProAuto Team.
 @endcomponent

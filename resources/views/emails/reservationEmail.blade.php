@@ -9,7 +9,7 @@
 Visit ProAuto.me
 @endcomponent
 
-Thank you for using our services ,<br>
-Best regards,<br>
+Thank you for using our services ,
+Best regards,
 ProAuto Team.
 @endcomponent
