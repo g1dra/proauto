@@ -47,8 +47,9 @@ class ReservationController extends Controller
 
         $reservation = (object)($request);
         $user = new \stdClass();
+        $user2 = new \stdClass();
         $user->email = "reservationsproauto@europe.com";
-
+        $user2->email = $_POST['email'];
         $secretKey = "6Lc_H3wUAAAAAFrY5a8MEsZ40H2smUDoVIQuRSJ5";
         $secretKeyClient = $_POST['g-recaptcha-response'];
         $remoteip = $_SERVER['REMOTE_ADDR'];
@@ -70,6 +71,7 @@ class ReservationController extends Controller
         $respons = json_decode($respons);
         // TODO $respons->score > 0.5 DODATI
         \Mail::to($user)->send(new reservationEmail($request));
+        \Mail::to($user2)->send(new reservationEmail($request));
         //var_dump($respons);
     }
 
