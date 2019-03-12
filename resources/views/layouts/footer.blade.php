@@ -14,7 +14,7 @@
                 <div class="col-xs-12 col-sm-4">
                     <div class="top-panel__info">
                         <i class="icon-telephone"></i>
-                        <strong>08:00 - 20:00 Call Center</strong>
+                        <strong>00:00 - 24:00 Call Center</strong>
                     </div>
                 </div>
             </div>
@@ -29,9 +29,9 @@
                 <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
                     <h5>Company</h5>
                     <ul class="footer-list">
-                        <li><a href="/contact">About us</a></li>
+                        {{--<li><a href="/contact">About us</a></li>--}}
                         {{--<li><a href="/posts">News</a></li>--}}
-                        <li><a href="/contact">Contact</a></li>
+                        <li><a href="/contacts">Contact</a></li>
                     </ul>
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
