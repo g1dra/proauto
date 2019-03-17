@@ -289,7 +289,7 @@
                                                     straight forward, and returning the car was quick. A very good
                                                     experience! Thank you.</p>
                                                 <span class="author_info">
-                                            <img src="images/author_img.png" alt="">
+                                            <img src="images/author_img_new1.png" alt="">
                                             <span class="name"><a href="#">Thomas Burgess</a></span>
                                         <span class="position">Regular Customer</span>
                                         </span>
@@ -307,7 +307,7 @@
                                                     there 15 minutes earlier. Car renting and returning was very
                                                     quick. </p>
                                                 <span class="author_info">
-                                            <img src="images/author_img_1.png" alt="">
+                                            <img src="images/author_img_new2.png" alt="">
                                             <span class="name"><a href="#">Cedric Gobert</a></span>
                                         <span class="position">Regular Customer</span>
                                         </span>
@@ -325,7 +325,7 @@
                                                 <p>Very friendly staff, and they will find the best solution for the
                                                     best price. I really recommend this rent a car agency.</p>
                                                 <span class="author_info">
-                                            <img src="images/author_img_2.png" alt="">
+                                            <img src="images/author_img_new3.png" alt="">
                                             <span class="name"><a href="#">Manel Martinez</a></span>
                                         <span class="position">Regular Customer</span>
                                         </span>
@@ -343,7 +343,7 @@
                                                     wait for us in agreed time, and returning was without any problem.
                                                     Would definitely choose them again</p>
                                                 <span class="author_info">
-                                            <img src="images/author_img_3.png" alt="">
+                                            <img src="images/author_img_new4.png" alt="">
                                             <span class="name"><a href="#">Bruce Justice</a></span>
                                         <span class="position">Regular Customer</span>
                                         </span>
