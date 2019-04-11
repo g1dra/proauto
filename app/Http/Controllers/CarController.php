@@ -95,7 +95,7 @@ class CarController extends Controller
         //$respons = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=".$secretKey."&response=".$secretKeyClient."&remoteip=".$remoteip);
 //        var_dump($respons);
         $respons = json_decode($respons);
-
+//        var_dump($respons);
 /*
         $curl = curl_init();
         curl_setopt($curl, CURLOPT_URL, $url);
@@ -112,8 +112,8 @@ class CarController extends Controller
         $respons = json_decode($curlData);
 */
         // TODO && $respons->score > 0.5 DODATI
-        //if($respons->success )
-        //{
+        if($respons->success )
+        {
 //            var_dump($respons);
             $user = new \stdClass();
             $user->email= "reservationsproauto@europe.com";
@@ -123,12 +123,9 @@ class CarController extends Controller
 //            \Mail::to($user)->send(new contactmail($comment));
 //            \Mail::to($user2)->send(new contactmail($comment));
             return "uspjelo";
-        //}
-        //else
-        //{
-//            var_dump($respons);
-          //  return "fail";
-        //}
+        }
+
+        return response('Fail', 200)->header('Content-Type', 'application/json');
     }
 
     public function modal($id){
