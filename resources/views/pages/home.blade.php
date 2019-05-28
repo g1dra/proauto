@@ -515,5 +515,6 @@
                     <img src="images/footer.jpg" alt="">
                 </figure>
             </section>
+        </div>
     </main>
 @endsection

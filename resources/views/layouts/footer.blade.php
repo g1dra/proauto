@@ -24,7 +24,8 @@
         <div class="container">
             <div class="row">
                 <div class="logo-center col-xs-12 col-sm-12 col-md-12 col-lg-3">
-                    <figure class="footer_logo"><a href="#"><span><em>Celebrating</em>2<strong>YEARS</strong></span><i class="icon-111"></i></a></figure>
+                    <figure class="footer_logo"><a href="#"><span><em>Celebrating</em>2<strong>YEARS</strong></span><i
+                                    class="icon-111"></i></a></figure>
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
                     <h5>Company</h5>
@@ -63,16 +64,40 @@
     <section class="site-footer__bottom-panel">
         <div class="container">
             <div class="row">
+                <div class="col-xs-12 col-md-4">
+                </div>
+                <div class="col-xs-12 col-md-4">
+
+                    <div class="copyright" style="text-align: center">
+                                 We accept the following payment methods:
+                    </div>
+                    <br>
+                    <img src="images/visa_mc_amex500.png"
+                         title="We accept the following payment methods:" alt="Visa-MasterCard-AmericanExpress">
+                    <br>
+                    <br>
+                    <div class="copyright" style="text-align: center"><span
+                                class="copyright-year">Pro Auto &copy; 2019 All rights reserved</span>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-4">
+                </div>
+            </div>
+            <div class="row">
                 <div class="col-xs-12 col-md-6">
-                    <div class="copyright"><span class="copyright-year">Pro Auto &copy; 2019 All rights reserved</span> {{--<a href="#" class="privacy_policy">Privacy Policy</a> <a href="#">Rental policy</a>--}}</div>
+{{--                    <div class="copyright"><span--}}
+{{--                                class="copyright-year">Pro Auto &copy; 2019 All rights reserved</span> --}}{{--<a href="#" class="privacy_policy">Privacy Policy</a> <a href="#">Rental policy</a>--}}
+{{--                    </div>--}}
                 </div>
                 <div class="col-xs-12 col-md-6">
                     <div class="social-list">
                         <ul class="social-list__icons">
-                            <li><a target="_blank" href="https://www.facebook.com/proauto.rentacar.5"><i class="icon-facebook-logo"></i></a></li>
+                            <li><a target="_blank" href="https://www.facebook.com/proauto.rentacar.5"><i
+                                            class="icon-facebook-logo"></i></a></li>
                             {{--<li><a target="_blank" href="https://twitter.com/tonytemplates/"><i class="icon-twitter-letter-logo"></i></a></li>--}}
                             {{--<li><a target="_blank" href="https://plus.google.com"><i class="icon-google-plus"></i></a></li>--}}
-                            <li><a target="_blank" href="https://www.instagram.com/pro_auto_rent/?hl=en"><i class="icon-linkedin-logo"></i></a></li>
+                            <li><a target="_blank" href="https://www.instagram.com/pro_auto_rent/?hl=en"><i
+                                            class="icon-linkedin-logo"></i></a></li>
                         </ul>
                     </div>
                 </div>
