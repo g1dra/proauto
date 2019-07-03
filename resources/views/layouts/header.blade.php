@@ -40,7 +40,7 @@
         <!-- Google Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
         <!-- Hotjar Tracking Code for https://www.proauto.me/ -->
-        <script>
+       {{-- <script>
             (function(h,o,t,j,a,r){
                 h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
                 h._hjSettings={hjid:1203713,hjsv:6};
@@ -49,7 +49,7 @@
                 r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
                 a.appendChild(r);
             })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-        </script>
+        </script>--}}
         {{--<script type="text/javascript" src="/js/snowstorm.js"></script>--}}
     </head>
 
