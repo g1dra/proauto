@@ -122,7 +122,7 @@
                             <p>Our service is available for you 24/7. If you have any further queries, please contact
                                 us.</p>
                             <ul class="list__marker">
-                                <li>Best price guarantee</li>
+                                <li>No deposit!</li>
                                 <li>No cancellation or amendment fees</li>
                                 <li>No hidden extras to pay - theft and damage cover included</li>
                             </ul>
