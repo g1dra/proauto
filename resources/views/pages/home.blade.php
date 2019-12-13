@@ -15,7 +15,7 @@
             <div id="htmlcaption1" class="nivo-caption">
                 <div class="nivo-caption__inner">
                     <div class="text">
-                        <h1 class="showtext showtext__h1">Get Special Offers for Summer 2019 <br></h1>
+                        <h1 class="showtext showtext__h1">Get Special Offers for Summer 2020 <br></h1>
                         <span class="showtext showtext__link"><a href="/steps">Book a car and get discounts for car renting!</a></span>
                     </div>
                 </div>
