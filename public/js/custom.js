@@ -1265,16 +1265,16 @@ function timeReservation() {
 
 function calculatePrice() {
     //calculate time difference
-    var timeDiff = {};
-    timeDiff = timeReservation();
+
+    var timeDiff = timeReservation();
     //callculate price
     var price = 0;
-    if (timeDiff.days <= 3) {
+    if (timeDiff <= 3) {
         price = global_car.price_3;
     }
-    else if (timeDiff.days <= 6)
+    else if (timeDiff <= 6)
         price = global_car.price_6;
-    else if (timeDiff.days > 6)
+    else if (timeDiff > 6)
         price = global_car.price_14;
     return price;
 }
