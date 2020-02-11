@@ -1282,14 +1282,14 @@ function calculatePrice() {
 function calculateDays() {
     var timeDiff = {};
     timeDiff = timeReservation();
-    var numberOfDays = 0;
+/*    var numberOfDays = 0;
     numberOfDays = timeDiff.days;
 
     if (timeDiff.hours > 0 || timeDiff.minutes > 0) {
         numberOfDays++;
-    }
+    }*/
 
-    return numberOfDays;
+    return timeDiff;
 }
 
 function printExtrasTable(reservationObj, days, extrasTotal) {
