@@ -1280,8 +1280,7 @@ function calculatePrice() {
 }
 
 function calculateDays() {
-    var timeDiff = {};
-    timeDiff = timeReservation();
+
 /*    var numberOfDays = 0;
     numberOfDays = timeDiff.days;
 
@@ -1289,7 +1288,7 @@ function calculateDays() {
         numberOfDays++;
     }*/
 
-    return timeDiff;
+    return timeReservation();
 }
 
 function printExtrasTable(reservationObj, days, extrasTotal) {
