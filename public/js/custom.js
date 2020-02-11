@@ -1257,10 +1257,17 @@ function timeReservation() {
     var then = reservationObj.date1 + " " + reservationObj.time1;
 
 
-    var diff = moment(then, "DD/MM/YYYY HH:mm:ss").diff(moment(now, "DD/MM/YYYY HH:mm:ss"),'days');
+    var diff = moment(then, "DD/MM/YYYY HH:mm:ss").diff(moment(now, "DD/MM/YYYY HH:mm:ss"), 'hours');
+
+    var days = Math.floor(diff/24);
+    if(diff%24){
+        days++
+    }
+
+
     /*var d = moment.duration(ms);
     var s = Math.floor(d.asHours()) + moment.utc(ms).format(":mm:ss");*/
-    return diff;
+    return days;
 }
 
 function calculatePrice() {
