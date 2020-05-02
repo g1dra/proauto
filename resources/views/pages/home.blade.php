@@ -370,11 +370,11 @@
                                 <div class="swiper-slide post-item" style="min-height: 450px !important;">
                                     <div class="post-item__inner" style="min-height: 450px !important;">
                                         <figure class="thumbnail">
-                                            <img src="/storage/cover_images/{{$post->cover_image}}" alt="" height="230px">
+                                            <img src="/storage/cover_images/{{$post->cover_image}}" alt="" style="height:230px">
                                         </figure>
                                         <div class="post-item__content">
                                             <span class="date">{{$post->created_at}}</span>
-                                            <h4  height="50px">{{$post->title}}</h4>
+                                            <h4 style="height:50px">{{$post->title}}</h4>
                                             <a href="/posts/{{$post->id}}" class="btn btn__marker"><i
                                                         class="icon-arrows"></i></a>
                                         </div>
