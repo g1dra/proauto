@@ -1257,39 +1257,45 @@ function timeReservation() {
     var then = reservationObj.date1 + " " + reservationObj.time1;
 
 
-    var ms = moment(then, "DD/MM/YYYY HH:mm:ss").diff(moment(now, "DD/MM/YYYY HH:mm:ss"));
-    var d = moment.duration(ms);
-    var s = Math.floor(d.asHours()) + moment.utc(ms).format(":mm:ss");
-    return d._data;
+    var diff = moment(then, "DD/MM/YYYY HH:mm:ss").diff(moment(now, "DD/MM/YYYY HH:mm:ss"), 'hours');
+
+    var days = Math.floor(diff/24);
+    if(diff%24){
+        days++
+    }
+
+
+    /*var d = moment.duration(ms);
+    var s = Math.floor(d.asHours()) + moment.utc(ms).format(":mm:ss");*/
+    return days;
 }
 
 function calculatePrice() {
     //calculate time difference
-    var timeDiff = {};
-    timeDiff = timeReservation();
+
+    var timeDiff = timeReservation();
     //callculate price
     var price = 0;
-    if (timeDiff.days <= 3) {
+    if (timeDiff <= 3) {
         price = global_car.price_3;
     }
-    else if (timeDiff.days <= 6)
+    else if (timeDiff <= 6)
         price = global_car.price_6;
-    else if (timeDiff.days > 6)
+    else if (timeDiff > 6)
         price = global_car.price_14;
     return price;
 }
 
 function calculateDays() {
-    var timeDiff = {};
-    timeDiff = timeReservation();
-    var numberOfDays = 0;
+
+/*    var numberOfDays = 0;
     numberOfDays = timeDiff.days;
 
     if (timeDiff.hours > 0 || timeDiff.minutes > 0) {
         numberOfDays++;
-    }
+    }*/
 
-    return numberOfDays;
+    return timeReservation();
 }
 
 function printExtrasTable(reservationObj, days, extrasTotal) {
