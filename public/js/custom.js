@@ -1279,9 +1279,9 @@ function calculatePrice() {
     if (timeDiff <= 3) {
         price = global_car.price_3;
     }
-    else if (timeDiff <= 6)
+    else if (timeDiff <= 7)
         price = global_car.price_6;
-    else if (timeDiff > 6)
+    else if (timeDiff > 7)
         price = global_car.price_14;
     return price;
 }
