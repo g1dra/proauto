@@ -285,12 +285,13 @@
                                     <blockquote>
                                         <div class="inner_blockquote">
                                             <div class="wrapper">
-                                                <p>I was very pleased once again. Hiring online was easy, collection was
-                                                    straight forward, and returning the car was quick. A very good
-                                                    experience! Thank you.</p>
+                                                <p>We looking for rent a car for a while and we choose the best option
+                                                    ever. Very comfortable in everything. Highly recommended for
+                                                    everybody, dont choose another big companies on the market. This one
+                                                    is the right option for your traveling through Montenegro!</p>
                                                 <span class="author_info">
                                             <img src="images/author_img_new1.png" alt="">
-                                            <span class="name"><a href="#">Thomas Burgess</a></span>
+                                            <span class="name"><a href="#">Jakub Ulč</a></span>
                                         <span class="position">Regular Customer</span>
                                         </span>
                                             </div>
@@ -303,12 +304,10 @@
                                     <blockquote>
                                         <div class="inner_blockquote">
                                             <div class="wrapper">
-                                                <p>We booked the car delivery at our apartment near Kotor. They were
-                                                    there 15 minutes earlier. Car renting and returning was very
-                                                    quick. </p>
+                                                <p>We can strongly recommended this rental car!! Customer care on the highest level. Definitely we choose this rental again! :) </p>
                                                 <span class="author_info">
                                             <img src="images/author_img_new2.png" alt="">
-                                            <span class="name"><a href="#">Cedric Gobert</a></span>
+                                            <span class="name"><a href="#">Gotowi do Drogi</a></span>
                                         <span class="position">Regular Customer</span>
                                         </span>
                                             </div>
@@ -322,11 +321,10 @@
                                     <blockquote>
                                         <div class="inner_blockquote">
                                             <div class="wrapper">
-                                                <p>Very friendly staff, and they will find the best solution for the
-                                                    best price. I really recommend this rent a car agency.</p>
+                                                <p>Very friendly service. Flexible and trustworthy team. Really cheaper then competition.</p>
                                                 <span class="author_info">
                                             <img src="images/author_img_new3.png" alt="">
-                                            <span class="name"><a href="#">Manel Martinez</a></span>
+                                            <span class="name"><a href="#">Alex Legret</a></span>
                                         <span class="position">Regular Customer</span>
                                         </span>
                                             </div>
@@ -339,12 +337,11 @@
                                     <blockquote>
                                         <div class="inner_blockquote">
                                             <div class="wrapper">
-                                                <p>We take the car in Montenegro and return it in Sarande Albania, they
-                                                    wait for us in agreed time, and returning was without any problem.
-                                                    Would definitely choose them again</p>
+                                                <p>An excellent smooth and very pleasant experience. Well done. We would certainly
+                                                    book with this company again</p>
                                                 <span class="author_info">
                                             <img src="images/author_img_new4.png" alt="">
-                                            <span class="name"><a href="#">Bruce Justice</a></span>
+                                            <span class="name"><a href="#">Piotr Gorka</a></span>
                                         <span class="position">Regular Customer</span>
                                         </span>
                                             </div>
@@ -370,7 +367,8 @@
                                 <div class="swiper-slide post-item" style="min-height: 450px !important;">
                                     <div class="post-item__inner" style="min-height: 450px !important;">
                                         <figure class="thumbnail">
-                                            <img src="/storage/cover_images/{{$post->cover_image}}" alt="" style="height:230px">
+                                            <img src="/storage/cover_images/{{$post->cover_image}}" alt=""
+                                                 style="height:230px">
                                         </figure>
                                         <div class="post-item__content">
                                             <span class="date">{{$post->created_at}}</span>

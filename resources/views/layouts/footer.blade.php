@@ -24,7 +24,7 @@
         <div class="container">
             <div class="row">
                 <div class="logo-center col-xs-12 col-sm-12 col-md-12 col-lg-3">
-                    <figure class="footer_logo"><a href="#"><span><em>Celebrating</em>2<strong>YEARS</strong></span><i
+                    <figure class="footer_logo"><a href="#"><span><em>Celebrating</em>3<strong>YEARS</strong></span><i
                                     class="icon-111"></i></a></figure>
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
