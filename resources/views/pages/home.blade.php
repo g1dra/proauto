@@ -308,7 +308,7 @@
                                                     highest level. Definitely we choose this rental again! :) </p>
                                                 <span class="author_info">
                                             <img src="images/flags/poland.jpeg" width="100" alt="">
-                                            <span class="name"><a href="#">Maciej Smarzewski</a></span>
+                                            <span class="name"><a href="#" style="font-size: 20px">Maciej Smarzewski</a></span>
                                         <span class="position">Regular Customer</span>
                                         </span>
                                             </div>
