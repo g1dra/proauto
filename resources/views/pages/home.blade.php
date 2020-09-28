@@ -304,7 +304,8 @@
                                     <blockquote>
                                         <div class="inner_blockquote">
                                             <div class="wrapper">
-                                                <p>We can strongly recommended this rental car!! Customer care on the highest level. Definitely we choose this rental again! :) </p>
+                                                <p>We can strongly recommended this rental car!! Customer care on the
+                                                    highest level. Definitely we choose this rental again! :) </p>
                                                 <span class="author_info">
                                             <img src="images/flags/poland.jpeg" alt="">
                                             <span class="name"><a href="#">Maciej Smarzewski</a></span>
@@ -321,7 +322,8 @@
                                     <blockquote>
                                         <div class="inner_blockquote">
                                             <div class="wrapper">
-                                                <p>Very friendly service. Flexible and trustworthy team. Really cheaper then competition.</p>
+                                                <p>Very friendly service. Flexible and trustworthy team. Really cheaper
+                                                    then competition.</p>
                                                 <span class="author_info">
                                             <img src="images/flags/france.jpeg" alt="">
                                             <span class="name"><a href="#">Alex Legret</a></span>
@@ -337,10 +339,11 @@
                                     <blockquote>
                                         <div class="inner_blockquote">
                                             <div class="wrapper">
-                                                <p>An excellent smooth and very pleasant experience. Well done. We would certainly
+                                                <p>An excellent smooth and very pleasant experience. Well done. We would
+                                                    certainly
                                                     book with this company again</p>
                                                 <span class="author_info">
-                                            <img src="images/flags/poland.jpeg" alt="">
+                                            <img src="images/flags/poland.jpeg" width="100" alt="">
                                             <span class="name"><a href="#">Piotr Gorka</a></span>
                                         <span class="position">Regular Customer</span>
                                         </span>
