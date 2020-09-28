@@ -15,7 +15,7 @@
             <div id="htmlcaption1" class="nivo-caption">
                 <div class="nivo-caption__inner">
                     <div class="text">
-                        <h1 class="showtext showtext__h1">Get Special Offers for Summer 2020 <br></h1>
+                        <h1 class="showtext showtext__h1">Get Special Offers for Winter 2020 <br></h1>
                         <span class="showtext showtext__link"><a href="/steps">Book a car and get discounts for car renting!</a></span>
                     </div>
                 </div>
@@ -31,7 +31,7 @@
             <div id="htmlcaption3" class="nivo-caption">
                 <div class="nivo-caption__inner  left-side">
                     <div class="text">
-                        <h1 class="showtext showtext__h1">Get Special Offers for Summer 2020 <br></h1>
+                        <h1 class="showtext showtext__h1">Get Special Offers for Winter 2020 <br></h1>
                         <span class="showtext showtext__link"><a href="/steps">Book a car and get discounts for car renting!</a></span>
                     </div>
                 </div>
@@ -290,7 +290,7 @@
                                                     everybody, dont choose another big companies on the market. This one
                                                     is the right option for your traveling through Montenegro!</p>
                                                 <span class="author_info">
-                                            <img src="images/author_img_new1.png" alt="">
+                                            <img src="images/flags/chez.jpg" alt="">
                                             <span class="name"><a href="#">Jakub Ulč</a></span>
                                         <span class="position">Regular Customer</span>
                                         </span>
@@ -306,8 +306,8 @@
                                             <div class="wrapper">
                                                 <p>We can strongly recommended this rental car!! Customer care on the highest level. Definitely we choose this rental again! :) </p>
                                                 <span class="author_info">
-                                            <img src="images/author_img_new2.png" alt="">
-                                            <span class="name"><a href="#">Gotowi do Drogi</a></span>
+                                            <img src="images/flags/poland.jpeg" alt="">
+                                            <span class="name"><a href="#">Maciej Smarzewski</a></span>
                                         <span class="position">Regular Customer</span>
                                         </span>
                                             </div>
@@ -323,7 +323,7 @@
                                             <div class="wrapper">
                                                 <p>Very friendly service. Flexible and trustworthy team. Really cheaper then competition.</p>
                                                 <span class="author_info">
-                                            <img src="images/author_img_new3.png" alt="">
+                                            <img src="images/flags/france.jpeg" alt="">
                                             <span class="name"><a href="#">Alex Legret</a></span>
                                         <span class="position">Regular Customer</span>
                                         </span>
@@ -340,7 +340,7 @@
                                                 <p>An excellent smooth and very pleasant experience. Well done. We would certainly
                                                     book with this company again</p>
                                                 <span class="author_info">
-                                            <img src="images/author_img_new4.png" alt="">
+                                            <img src="images/flags/poland.jpeg" alt="">
                                             <span class="name"><a href="#">Piotr Gorka</a></span>
                                         <span class="position">Regular Customer</span>
                                         </span>
