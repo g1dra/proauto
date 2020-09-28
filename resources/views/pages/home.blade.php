@@ -290,7 +290,7 @@
                                                     everybody, dont choose another big companies on the market. This one
                                                     is the right option for your traveling through Montenegro!</p>
                                                 <span class="author_info">
-                                            <img src="images/flags/chez.jpg" alt="">
+                                            <img src="images/flags/chez.jpg" width="100" alt="">
                                             <span class="name"><a href="#">Jakub Ulč</a></span>
                                         <span class="position">Regular Customer</span>
                                         </span>
@@ -307,7 +307,7 @@
                                                 <p>We can strongly recommended this rental car!! Customer care on the
                                                     highest level. Definitely we choose this rental again! :) </p>
                                                 <span class="author_info">
-                                            <img src="images/flags/poland.jpeg" alt="">
+                                            <img src="images/flags/poland.jpeg" width="100" alt="">
                                             <span class="name"><a href="#">Maciej Smarzewski</a></span>
                                         <span class="position">Regular Customer</span>
                                         </span>
@@ -325,7 +325,7 @@
                                                 <p>Very friendly service. Flexible and trustworthy team. Really cheaper
                                                     then competition.</p>
                                                 <span class="author_info">
-                                            <img src="images/flags/france.jpeg" alt="">
+                                            <img src="images/flags/france.jpeg" width="100" alt="">
                                             <span class="name"><a href="#">Alex Legret</a></span>
                                         <span class="position">Regular Customer</span>
                                         </span>
