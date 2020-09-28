@@ -290,7 +290,7 @@
                                                     everybody, dont choose another big companies on the market. This one
                                                     is the right option for your traveling through Montenegro!</p>
                                                 <span class="author_info">
-                                            <img src="images/flags/chez.jpg" width="100" alt="">
+                                            <img src="images/flags/chez.jpeg" width="100" alt="">
                                             <span class="name"><a href="#">Jakub Ulč</a></span>
                                         <span class="position">Regular Customer</span>
                                         </span>
