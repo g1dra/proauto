@@ -5,18 +5,18 @@
         <!-- Slider -->
         <div class="slider-wrapper theme-default">
             <div id="slider" class="nivoSlider">
-                <img src="images/slider/slide_2.jpg" title="#htmlcaption1" data-thumb="images/slider/slide_2.jpg"
+                <img src="images/slider/slider_1_novi.jpg" title="#htmlcaption1" data-thumb="images/slider/slide_2.jpg"
                      alt=""/>
                 {{--<img src="images/slider/mm.jpg" title="#htmlcaption2" data-thumb="images/slider/mm.jpg" alt="" />--}}
-                <img src="images/slider/slide_2.jpg" title="#htmlcaption3" data-thumb="images/slider/slide_2.jpg"
+                <img src="images/slider/slide_2_novi.jpg" title="#htmlcaption3" data-thumb="images/slider/slide_2.jpg"
                      alt=""/>
                 {{--<img src="images/slider/mm.jpg" title="#htmlcaption2" data-thumb="images/slider/mm.jpg" alt="" />--}}
             </div>
             <div id="htmlcaption1" class="nivo-caption">
                 <div class="nivo-caption__inner">
                     <div class="text">
-                        <h1 class="showtext showtext__h1">Get Special Offers for Winter 2020 <br></h1>
-                        <span class="showtext showtext__link"><a href="/steps">Book a car and get discounts for car renting!</a></span>
+                        <h1 class="showtext showtext__h1">We promise, You will have the best experience <br></h1>
+{{--                        <span class="showtext showtext__link"><a href="/steps">Book a car and get discounts for car renting!</a></span>--}}
                     </div>
                 </div>
             </div>
@@ -31,8 +31,8 @@
             <div id="htmlcaption3" class="nivo-caption">
                 <div class="nivo-caption__inner  left-side">
                     <div class="text">
-                        <h1 class="showtext showtext__h1">Get Special Offers for Winter 2020 <br></h1>
-                        <span class="showtext showtext__link"><a href="/steps">Book a car and get discounts for car renting!</a></span>
+                        <h1 class="showtext showtext__h1"> Airport Pickup & Drop off - Free of Charge <br></h1>
+{{--                        <span class="showtext showtext__link"><a href="/steps">Book a car and get discounts for car renting!</a></span>--}}
                     </div>
                 </div>
             </div>
