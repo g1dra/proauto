@@ -8,7 +8,7 @@
                 <img src="images/slider/slider_1_novi.jpg" title="#htmlcaption1" data-thumb="images/slider/slider_1_novi.jpg"
                      alt=""/>
                 {{--<img src="images/slider/mm.jpg" title="#htmlcaption2" data-thumb="images/slider/mm.jpg" alt="" />--}}
-                <img src="images/slider/slide_2_novi.jpg" title="#htmlcaption3" data-thumb="images/slider/slide_2_novi.jpg"
+                <img src="images/slider/slider_2_novi.jpg" title="#htmlcaption3" data-thumb="images/slider/slider_2_novi.jpg"
                      alt=""/>
                 {{--<img src="images/slider/mm.jpg" title="#htmlcaption2" data-thumb="images/slider/mm.jpg" alt="" />--}}
             </div>
