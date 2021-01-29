@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 use App\Mail\contactmail;
+use Carbon\Carbon;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
 use App\Car;
@@ -22,6 +23,7 @@ class CarController extends Controller
             "Mojkovac", "Plav", "Kolašin",
             "Žabljak","Plužine","Andrijevica","Šavnik"
         ];
+
         return view('pages.home', compact(['cars','cities', 'posts']));
     }
 

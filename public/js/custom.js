@@ -65,7 +65,7 @@ $document.ready(function () {
             }
         });
 
-        $('#setDateBtn').on('click', function () {
+        $('.setDateBtn').on('click', function () {
             var day = $("#selectPrevDay option:selected").val(),
                 month = $("#selectPrevMonth option:selected").val(),
                 time = $("#selectPrevTime option:selected").val(),

@@ -105,7 +105,7 @@
                             </div>
                         </div>
                         <div class="book-form__btn">
-                            <input type="submit" class="btn" id="setDateBtn" value="Book now">
+                            <input type="submit" class="btn setDateBtn" id="setDateBtn2" value="Book now">
                         </div>
                     </form>
                 </div>
@@ -465,7 +465,7 @@
                                         --}}
                     {{--<div class="swiper-slide post-item">
                                             <div class="post-item__inner">
-                                                <figure class="thumbnail">
+                                                <figure class="thumbfooter_logonail">
                                                     <img src="images/item_img-3.jpg" alt="">
                                                 </figure>
                                                 <div class="post-item__content">

@@ -4,10 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Car extends Model
+class HeroSlider extends Model
 {
-    protected $guarded=[];
-
-
-
+    //
 }

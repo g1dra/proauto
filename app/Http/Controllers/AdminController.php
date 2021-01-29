@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Car;
 use Illuminate\Http\Request;
 
 class AdminController extends Controller
@@ -13,7 +14,8 @@ class AdminController extends Controller
      */
     public function index()
     {
-        return view('admin.index');
+        $cars = Car::all();
+        return view('admin.index', compact('cars'));
     }
 
     /**
@@ -52,11 +54,12 @@ class AdminController extends Controller
      * Show the form for editing the specified resource.
      *
      * @param  int  $id
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\Foundation\Application|\Illuminate\View\View
      */
     public function edit($id)
     {
-        //
+        $car = Car::find($id);
+        return view('admin.edit', compact('car'));
     }
 
     /**

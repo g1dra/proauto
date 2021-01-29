@@ -85,7 +85,7 @@
                         <div class="tt-col">
                             <div class="book-form__text">Drop-Off Information:</div>
                             <div class="tt-row">
-                                <select class="tt-form-control tt-select-large" name="location2" id="location2">
+                                <select class="tt-form-control tt-select-large" name="location2" id="location3">
                                     <option selected value="Location">Location</option>
                                     @foreach ($cities as $city)
                                         <option value="{{$city}}">{{$city}}</option>
@@ -106,7 +106,7 @@
                     <div class="tt-row tt-row-flex">
                         <div class="tt-col">
                             <div class="book-form__btn">
-                                <input type="submit" class="btn" id="setDateBtn"  value="SEARCH">
+                                <input type="submit" class="btn setDateBtn" id="setDateBtn1"  value="SEARCH">
                             </div>
                         </div>
                     </div>
