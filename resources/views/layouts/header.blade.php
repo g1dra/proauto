@@ -188,10 +188,21 @@
                             <li class="{{ Request::is("contacts") ? 'current': ''}}">
                                 <a href="/contacts">Contacts</a></li>
                             <li class="{{ Request::is("faq") ? 'current': ''}}">
-                                <a href="/faq">FAQ</a></li>
+                                <a href="/faq">FAQ</a>
+                            </li>
                             @auth
                                 <li class="{{ Request::is("admin") ? 'current': ''}}">
                                     <a href="/admin">Admin</a></li>
+                                <li class="{{ Request::is("logout") ? 'current': ''}}">
+                                    <a href="{{ route('logout') }}"
+                                       onclick="event.preventDefault();
+                                                         document.getElementById('logout-form').submit();">
+                                        {{ __('Logout') }}
+                                    </a>
+                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                        @csrf
+                                    </form>
+                                </li>
                             @endauth
                         </ul>
 
@@ -280,6 +291,16 @@
                             @auth
                                 <li class="{{ Request::is("admin") ? 'current': ''}}">
                                     <a href="/admin">Admin</a></li>
+                                <li class="{{ Request::is("logout") ? 'current': ''}}">
+                                    <a href="{{ route('logout') }}"
+                                       onclick="event.preventDefault();
+                                                         document.getElementById('logout-form').submit();">
+                                        {{ __('Logout') }}
+                                    </a>
+                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                        @csrf
+                                    </form>
+                                </li>
                             @endauth
                         </ul>
 

@@ -180,7 +180,7 @@
                                                         <div class="gallery__item col-xs-12 col-sm-6 col-xl-4">
                                                             <figure class="gallery__item__image">
                                                                 <a class="hover" href="#" onclick="carSelect({{$car}})">
-                                                                    <img style="height: 185px !important; width: 400px;" src="/{{$car->img_path}}"  alt={{$car->alt}} />
+                                                                    <img style="height: 185px !important; width: 400px;" src="{{$car->img_path}}"  alt={{$car->alt}} />
                                                                     <i class="icon-arrow-down-sign-to-navigate2"></i>
                                                                 </a>
                                                             </figure>

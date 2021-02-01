@@ -13,7 +13,7 @@
 
 
     <div style="margin-top: 50px" class="container-fluid">
-        <div class="form-group">
+       {{-- <div class="form-group">
             <ul class="nav">
                 <li class="nav-item">
                     <a class="dropdown-item" href="{{ route('logout') }}"
@@ -26,7 +26,7 @@
                     </form>
                 </li>
             </ul>
-        </div>
+        </div>--}}
         <div class="form-group">
             <ul class="nav">
                 <li class="nav-item">
@@ -59,7 +59,7 @@
                     <td>{{ $car->id }}</td>
                     <td>{{ $car->name }}</td>
                     <td><img src="{{$car->img_path}}" width="200px"></td>
-                    <td>{{ $car-> model }}</td>
+                    <td>{{ $car->model }}</td>
                     <td>{{ $car->doors }}</td>
                     <td>{{ $car->passengers }}</td>
                     <td>{{ $car->transmission }}</td>
