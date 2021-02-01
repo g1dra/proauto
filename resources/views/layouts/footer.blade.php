@@ -72,7 +72,7 @@
                                  We accept the following payment methods:
                     </div>
                     <br>
-                    <img src="images/payments.jpg"
+                    <img src="/images/payments.jpg"
                          title="We accept the following payment methods:" alt="Visa-MasterCard-AmericanExpress">
                     <br>
                     <br>

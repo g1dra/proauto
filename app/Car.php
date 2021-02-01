@@ -8,6 +8,4 @@ class Car extends Model
 {
     protected $guarded=[];
 
-
-
 }

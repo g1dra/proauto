@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
+use App\HeroSlider;
 use App\Mail\contactmail;
 use Carbon\Carbon;
 use Illuminate\Support\Facades\DB;
@@ -13,7 +14,8 @@ use PhpParser\Comment;
 class CarController extends Controller
 {
     public function index(){
-        $cars = Car::all();
+        $heroSlider = HeroSlider::all();
+        $cars = Car::orderBy('order')->get();
         $posts = DB::table('posts')->orderBy('created_at', 'desc')->paginate(5);
         $cities = ["Airport Podgorica","Airport Tivat","Podgorica", "Nikšić","Pljevlja",
             "BijeloPolje", "Cetinje",
@@ -24,7 +26,7 @@ class CarController extends Controller
             "Žabljak","Plužine","Andrijevica","Šavnik"
         ];
 
-        return view('pages.home', compact(['cars','cities', 'posts']));
+        return view('pages.home', compact(['cars','cities', 'posts', 'heroSlider']));
     }
 
     public function fleet(){
@@ -38,7 +40,7 @@ class CarController extends Controller
     }
 
     public function steps(){
-        $cars = Car::all();
+        $cars = Car::orderBy('order')->get();
         $cities = ["Airport Podgorica","Airport Tivat","Podgorica", "Nikšić","Pljevlja",
                     "BijeloPolje", "Cetinje",
                     "HercegNovi", "Berane",

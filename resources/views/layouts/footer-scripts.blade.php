@@ -2,6 +2,7 @@
 {{--<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>--}}
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-121201987-1"></script>
+@yield('footer-scripts')
 <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}

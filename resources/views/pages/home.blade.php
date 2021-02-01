@@ -5,37 +5,47 @@
         <!-- Slider -->
         <div class="slider-wrapper theme-default">
             <div id="slider" class="nivoSlider">
-                <img src="images/slider/slider_1_novi.jpg" title="#htmlcaption1" data-thumb="images/slider/slider_1_novi.jpg"
+                @foreach($heroSlider as $slider)
+                    <img src="{{$slider->image_path}}" title="{{"#htmlcaption" . $slider->id}}" data-thumb="{{$slider->image_path}}"
+                         alt=""/>
+                @endforeach
+                {{--<img src="/images/slider/slider_1_novi.jpg" title="#htmlcaption1" data-thumb="images/slider/slider_1_novi.jpg"
                      alt=""/>
-                {{--<img src="images/slider/mm.jpg" title="#htmlcaption2" data-thumb="images/slider/mm.jpg" alt="" />--}}
-                <img src="images/slider/slider_2_novi.jpg" title="#htmlcaption3" data-thumb="images/slider/slider_2_novi.jpg"
-                     alt=""/>
-                {{--<img src="images/slider/mm.jpg" title="#htmlcaption2" data-thumb="images/slider/mm.jpg" alt="" />--}}
+                <img src="/images/slider/slider_2_novi.jpg" title="#htmlcaption3" data-thumb="images/slider/slider_2_novi.jpg"
+                     alt=""/>--}}
             </div>
-            <div id="htmlcaption1" class="nivo-caption">
-                <div class="nivo-caption__inner">
-                    <div class="text">
-                        <h1 class="showtext showtext__h1">We promise, You will have the best experience <br></h1>
-{{--                        <span class="showtext showtext__link"><a href="/steps">Book a car and get discounts for car renting!</a></span>--}}
+
+            @foreach($heroSlider as $slider)
+                <div id="{{"htmlcaption" . $slider->id}}" class="nivo-caption">
+                    <div class="nivo-caption__inner">
+                        <div class="text">
+                            <h1 class="showtext showtext__h1">{{$slider->image_text}} <br></h1>
+                        </div>
                     </div>
                 </div>
+            @endforeach
+{{--            <div id="htmlcaption1" class="nivo-caption">--}}
+{{--                <div class="nivo-caption__inner">--}}
+{{--                    <div class="text">--}}
+{{--                        <h1 class="showtext showtext__h1">We promise, You will have the best experience <br></h1>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+            {{--<div id="htmlcaption2" class="nivo-caption">
+            <div class="nivo-caption__inner left-side">
+            <div class="text">
+            <h1 class="showtext showtext__h1">Exploring Montenegro <br></h1>
+            <span class="showtext showtext__link"><a href="/steps">It will be more fun with Pro Auto rent a car!</a></span>
             </div>
-            {{--<div id="htmlcaption2" class="nivo-caption">--}}
-            {{--<div class="nivo-caption__inner left-side">--}}
-            {{--<div class="text">--}}
-            {{--<h1 class="showtext showtext__h1">Exploring Montenegro <br></h1>--}}
-            {{--<span class="showtext showtext__link"><a href="/steps">It will be more fun with Pro Auto rent a car!</a></span>--}}
-            {{--</div>--}}
-            {{--</div>--}}
-            {{--</div>--}}
-            <div id="htmlcaption3" class="nivo-caption">
+            </div>
+            </div>--}}
+            {{--<div id="htmlcaption2" class="nivo-caption">
                 <div class="nivo-caption__inner  left-side">
                     <div class="text">
                         <h1 class="showtext showtext__h1"> Airport Pickup & Drop off - Free of Charge <br></h1>
-{{--                        <span class="showtext showtext__link"><a href="/steps">Book a car and get discounts for car renting!</a></span>--}}
                     </div>
                 </div>
-            </div>
+            </div>--}}
             {{--<div id="htmlcaption4" class="nivo-caption">--}}
             {{--<div class="nivo-caption__inner  left-side">--}}
             {{--<div class="text">--}}

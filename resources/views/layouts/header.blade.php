@@ -1,5 +1,6 @@
 <head>
         <meta charset="utf-8">
+        <meta name="csrf-token" content="{{ csrf_token() }}">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
@@ -188,6 +189,10 @@
                                 <a href="/contacts">Contacts</a></li>
                             <li class="{{ Request::is("faq") ? 'current': ''}}">
                                 <a href="/faq">FAQ</a></li>
+                            @auth
+                                <li class="{{ Request::is("admin") ? 'current': ''}}">
+                                    <a href="/admin">Admin</a></li>
+                            @endauth
                         </ul>
 
                     </div>
@@ -272,6 +277,10 @@
                                 <a href="/contacts" data-hover="Contacts">Contacts</a></li>
                             <li class="{{ Request::is("faq") ? 'current': ''}}">
                                 <a href="/faq" data-hover="FAQ">FAQ</a></li>
+                            @auth
+                                <li class="{{ Request::is("admin") ? 'current': ''}}">
+                                    <a href="/admin">Admin</a></li>
+                            @endauth
                         </ul>
 
 
