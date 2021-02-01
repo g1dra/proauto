@@ -33,6 +33,7 @@
                         {{--<li><a href="/contact">About us</a></li>--}}
                         {{--<li><a href="/posts">News</a></li>--}}
                         <li><a href="/contacts">Contact</a></li>
+                        <li><a href="/login">Login</a></li>
                     </ul>
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
