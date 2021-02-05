@@ -40,6 +40,7 @@
                 <th scope="col">#</th>
                 <th scope="col">Name</th>
                 <th scope="col">Image</th>
+                <th scope="col">Order</th>
                 <th scope="col">Model</th>
                 <th scope="col">Doors</th>
                 <th scope="col">Passengers</th>
