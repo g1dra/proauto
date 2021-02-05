@@ -16,7 +16,7 @@ class AdminController extends Controller
     public function index()
     {
         $heroSlider = HeroSlider::all();
-        $cars = Car::all();
+        $cars = Car::orderBy('order')->get();
         return view('admin.index', compact(['cars', 'heroSlider']));
     }
 
