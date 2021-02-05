@@ -22,6 +22,8 @@
                                 </div>
                                 <footer class="post-list__item-footer">
                                     <a href="/posts/{{$post->id}}" class="btn">READ POST</a>
+                                    <a href="/posts/{{$post->id}}" class="btn data-delete" data-method="DELETE"
+                                       data-confirm="Are you sure?">DELETE POST</a>
                                 </footer>
                             </div>
                         </article>
@@ -244,4 +246,7 @@
             </div>
         </div>
     </main>
+@endsection
+@section('footer-scripts')
+    <script src="{{asset('/js/formForDelete.js')}}"></script>
 @endsection

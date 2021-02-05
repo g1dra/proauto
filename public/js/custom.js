@@ -136,7 +136,6 @@ $document.ready(function () {
                 if(currentIndex === 1){
                     if(typeof(global_car) == "object")
                     {
-                        console.log(global_car);
                         $.amaran({
                             'inEffect'  :'slideRight',
                             'position'  :'top right',
@@ -1246,9 +1245,10 @@ function getReservationData() {
     for( var i =0; i < formData.length; i++){
         reservationObj[formData[i].name] = formData[i].value;
     }
-    return reservationObj;
 
+    return reservationObj;
 }
+
 function timeReservation() {
     var reservationObj = getReservationData();
 
@@ -1321,7 +1321,7 @@ function printExtrasTable(reservationObj, days, extrasTotal) {
                                 " Drop-Off time: "+reservationObj.date1+" "+reservationObj.time1+
                             "</li>"+
                             "<li>"+
-                                " Passenger's name: "+reservationObj.firstname+
+                                " Passenger's name: "+reservationObj.firstname+" "+reservationObj.lastname+
                             "</li>"+
                             "<li>"+
                                 " Passenger's email: "+reservationObj.email+
