@@ -22,7 +22,7 @@
 
             <div class="form-group">
                 <label for="image_text">Image text</label>
-                <input type="text" class="form-control" id="image_text" placeholder="Name" name="image_text">
+                <input type="text" class="form-control" id="image_text" placeholder="Name" name="image_text" value="{{$heroSlider->image_text }}">
             </div>
 
             <div class="form-group">
