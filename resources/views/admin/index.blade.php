@@ -59,6 +59,7 @@
                     <td>{{ $car->id }}</td>
                     <td>{{ $car->name }}</td>
                     <td><img src="{{$car->img_path}}" width="200px"></td>
+                    <td>{{ $car->order }}</td>
                     <td>{{ $car->model }}</td>
                     <td>{{ $car->doors }}</td>
                     <td>{{ $car->passengers }}</td>
