@@ -134,7 +134,7 @@
                             <ul class="list__marker">
                                 <li>No deposit!</li>
                                 <li>No cancellation or amendment fees</li>
-                                <li>No hidden extras to pay - theft and damage cover included</li>
+                                <li>No credit card required for booking and car rental</li>
                             </ul>
                             {{-- <a href="services.html" class="btn">Read more</a> todo services--}}
                         </div>
