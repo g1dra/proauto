@@ -44,9 +44,9 @@ class AdminController extends Controller
             'img_path_2' => 'mimes:jpeg,jpg,png,gif|required|dimensions:height=333,width=671',
         ]);
 
-        $img_path = $request->file('img_path')->store('public/fleet', 'public');
-        $img_path_1 = $request->file('img_path_1')->store('public/gallery', 'public');
-        $img_path_2 = $request->file('img_path_2')->store('public/gallery', 'public');
+        $img_path = $request->file('img_path')->store('public/fleet');
+        $img_path_1 = $request->file('img_path_1')->store('public/gallery');
+        $img_path_2 = $request->file('img_path_2')->store('public/gallery');
 
         Car::create([
             'name' => $request->input('name'),
@@ -60,9 +60,9 @@ class AdminController extends Controller
             'price_3' => $request->input('price_3'),
             'price_6' => $request->input('price_6'),
             'price_14' => $request->input('price_14'),
-            'img_path' => $img_path,
-            'img_path_1' => $img_path_1,
-            'img_path_2' => $img_path_2,
+            'img_path' => '/storage/fleet/' . $img_path,
+            'img_path_1' => '/storage/gallery/' . $img_path_1,
+            'img_path_2' => '/storage/gallery/' . $img_path_2,
             'alt' => trim(' ', $request->input('name'))
         ]);
 
