@@ -132,7 +132,13 @@ class AdminController extends Controller
 
         if($request->file('img_path'))
         {
-            $img_path = $request->file('img_path')->move('/images/fleet',  $request->file('img_path')->getClientOriginalName());
+            $fileNameWithExt = $request->file('img_path')->getClientOriginalName();
+            $fileName = pathinfo($fileNameWithExt , PATHINFO_FILENAME);
+            $extension = $request->file('img_path')->getClientOriginalExtension();
+            $fileNameToStore = $fileName.'_'.time().'.'.$extension;
+
+            $img_path = $request->file('img_path')->storeAs('public/fleet', $fileNameToStore);
+            $img_path = '/storage/fleet/' . $fileNameToStore;
         }
         else
         {
@@ -141,7 +147,13 @@ class AdminController extends Controller
 
         if($request->file('img_path_1'))
         {
-            $img_path_1 = $request->file('img_path_1')->move('/images/gallery',  $request->file('img_path_1')->getClientOriginalName());
+            $fileNameWithExt = $request->file('img_path_1')->getClientOriginalName();
+            $fileName = pathinfo($fileNameWithExt , PATHINFO_FILENAME);
+            $extension = $request->file('img_path_1')->getClientOriginalExtension();
+            $fileNameToStore2 = $fileName.'_'.time().'.'.$extension;
+
+            $img_path_1 = $request->file('img_path_1')->storeAs('public/gallery', $fileNameToStore2);
+            $img_path_1 = '/storage/gallery/' . $fileNameToStore2;
         }
         else
         {
@@ -150,7 +162,13 @@ class AdminController extends Controller
 
         if($request->file('img_path_2'))
         {
-            $img_path_2 = $request->file('img_path_2')->move('/images/gallery',  $request->file('img_path_2')->getClientOriginalName());
+            $fileNameWithExt = $request->file('img_path_2')->getClientOriginalName();
+            $fileName = pathinfo($fileNameWithExt , PATHINFO_FILENAME);
+            $extension = $request->file('img_path_2')->getClientOriginalExtension();
+            $fileNameToStore3 = $fileName.'_'.time().'.'.$extension;
+
+            $img_path_2 = $request->file('img_path_2')->storeAs('public/gallery', $fileNameToStore3);
+            $img_path_2 = '/storage/gallery/' . $fileNameToStore3;
         }
         else
         {

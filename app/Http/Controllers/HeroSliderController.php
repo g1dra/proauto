@@ -30,11 +30,16 @@ class HeroSliderController extends Controller
             'image_text' => 'required|string'
         ]);
 
-        $image_path = $request->file('image_path')->move('/images/slider',
-            $request->file('image_path')->getClientOriginalName());
+        $fileNameWithExt = $request->file('image_path')->getClientOriginalName();
+        $fileName = pathinfo($fileNameWithExt , PATHINFO_FILENAME);
+        $extension = $request->file('image_path')->getClientOriginalExtension();
+        $fileNameToStore = $fileName.'_'.time().'.'.$extension;
+
+        $img_path = $request->file('image_path')->storeAs('public/heroSlider', $fileNameToStore);
+
 
         HeroSlider::create([
-            'image_path' => $image_path,
+            'image_path' => '/storage/heroSlider/' . $fileNameToStore,
             'image_text' => $request->input('image_text'),
         ]);
 
@@ -59,8 +64,13 @@ class HeroSliderController extends Controller
 
         if($request->file('image_path'))
         {
-            $image_path = $request->file('image_path')->move('images/slider',
-                $request->file('image_path')->getClientOriginalName());
+            $fileNameWithExt = $request->file('image_path')->getClientOriginalName();
+            $fileName = pathinfo($fileNameWithExt , PATHINFO_FILENAME);
+            $extension = $request->file('image_path')->getClientOriginalExtension();
+            $fileNameToStore = $fileName.'_'.time().'.'.$extension;
+
+            $image_path = $request->file('image_path')->storeAs('public/heroSlider', $fileNameToStore);
+            $image_path = '/storage/heroSlider/' . $fileNameToStore;
         }
         else
         {
