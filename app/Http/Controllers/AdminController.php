@@ -46,7 +46,7 @@ class AdminController extends Controller
 
         $fileNameWithExt = $request->file('img_path')->getClientOriginalName();
         $fileName = pathinfo($fileNameWithExt , PATHINFO_FILENAME);
-        $extension = $request->file('cover_image')->getClientOriginalExtension();
+        $extension = $request->file('img_path')->getClientOriginalExtension();
         $fileNameToStore = $fileName.'_'.time().'.'.$extension;
 
         $img_path = $request->file('img_path')->storeAs('public/fleet', $fileNameToStore);
