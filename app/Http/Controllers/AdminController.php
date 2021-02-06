@@ -44,9 +44,9 @@ class AdminController extends Controller
             'img_path_2' => 'mimes:jpeg,jpg,png,gif|required|dimensions:height=333,width=671',
         ]);
 
-        $img_path = $request->file('img_path')->move('/images/fleet',  $request->file('img_path')->getClientOriginalName());
-        $img_path_1 = $request->file('img_path_1')->move('/images/gallery',  $request->file('img_path_1')->getClientOriginalName());
-        $img_path_2 = $request->file('img_path_2')->move('/images/gallery',  $request->file('img_path_2')->getClientOriginalName());
+        $img_path = $request->file('img_path')->store('fleet');
+        $img_path_1 = $request->file('img_path_1')->store('gallery');
+        $img_path_2 = $request->file('img_path_2')->store('gallery');
 
         Car::create([
             'name' => $request->input('name'),
