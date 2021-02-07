@@ -1,5 +1,6 @@
 @component('mail::message')
     Contact name: {{$comment->name}} <br>
+    Contact last name: {{$comment->lastname}} <br>
     Contact email: {{$comment->email}} <br>
     Contact message: {{$comment->text}} <br>
     @component('mail::button', ['url' => 'http://www.proauto.me/'])

@@ -23,6 +23,9 @@
                  Passenger's name: {{$reservation->firstname}}
                 </li>
             <li>
+                Passenger's last name: {{$reservation->lastname}}
+            </li>
+            <li>
                  Passenger's email: {{$reservation->email}}
             </li>
             @isset  ($reservation->flightNumber)

@@ -30,7 +30,7 @@ class CarController extends Controller
     }
 
     public function fleet(){
-        $cars = Car::all();
+        $cars = Car::orderBy('order')->get();
         return view('pages.fleet', compact('cars'));
     }
 
@@ -76,6 +76,7 @@ class CarController extends Controller
     {
         $comment = (object) [
             'name' => $_POST['name'],
+            'lastname' => $_POST['lastname'],
             'email' => $_POST['email'],
             'text' => $_POST['Comment']
         ];
