@@ -43,7 +43,7 @@ Route::get('admin/hero-slider/create', 'HeroSliderController@create');
 Route::post('admin/hero-slider', 'HeroSliderController@store');
 Route::get('admin/hero-slider/edit/{id}', 'HeroSliderController@edit');
 Route::patch('admin/hero-slider/update/{id}', 'HeroSliderController@update');
-Route::delete('admin/hero-slider/{id}', 'HeroSliderController@de');
+Route::delete('admin/hero-slider/{id}', 'HeroSliderController@destroy');
 Route::resource('admin','AdminController');
 
 Route::get('/home', 'HomeController@index')->name('home');
